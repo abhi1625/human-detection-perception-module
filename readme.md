@@ -1,6 +1,6 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/kartikmadhira1/human-detection-module.svg?branch=master)](https://travis-ci.org/kartikmadhira1/human-detection-module)
+[![Coverage Status](https://coveralls.io/repos/github/kartikmadhira1/human-detection-module/badge.svg?branch=master)](https://coveralls.io/github/kartikmadhira1/human-detection-module?branch=master))
 ---
 
 ## Overview
