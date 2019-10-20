@@ -1,6 +1,6 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/kartikmadhira1/human-detection-module.svg?branch=master)](https://travis-ci.org/kartikmadhira1/human-detection-module)
-[![Coverage Status](https://coveralls.io/repos/github/kartikmadhira1/human-detection-module/badge.svg?branch=master)](https://coveralls.io/github/kartikmadhira1/human-detection-module?branch=master)
+[![Build Status](https://travis-ci.org/kartikmadhira1/human-detection-perception-module.svg?branch=master)](https://travis-ci.org/kartikmadhira1/human-detection-perception-module)
+[![Coverage Status](https://coveralls.io/repos/github/kartikmadhira1/human-detection-perception-module/badge.svg?branch=master)](https://coveralls.io/github/kartikmadhira1/human-detection-perception-module?branch=master)
 ---
 
 ## Overview
@@ -19,7 +19,7 @@ the robot to navigate or manipulate through space.
 
 ## Build Instructions
 ```
-git clone --recursive https://github.com/kartikmadhira1/human-detection-module
+git clone --recursive https://github.com/kartikmadhira1/human-detection-perception-module
 cd <path to repository>
 mkdir build
 cd build
