@@ -131,4 +131,10 @@ public:
      * @brief default destructor
      */    
     ~IOModule();
+
+private:
+    string inputDirectory;      // path to directory containing input images/vides
+    int inputType;              // id assigned to input type: images - 1, video - 2, camera-feed - 3
+    string outputDirectory;     // path to directory in which text file will be saved
+    int cameraID;               // device ID of the camera from which data is to be read
 };
