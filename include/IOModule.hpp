@@ -1,0 +1,134 @@
+/******************************************************************************
+ *  MIT License
+ *
+ *  Copyright (c) 2019 Kartik Madhira, Abhinav Modi 
+
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *******************************************************************************/
+
+/**@file IOMudule.hpp
+ * @brief Header file for input-output module.
+ *        Contains declarations for required headers and methods.
+ *
+ * Detailed description follows here.
+ * @author     : Abhinav Modi
+ * @created on : Oct 19, 2019
+ */
+
+#pragma once
+
+#include <glob.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <boost/filesystem.hpp>
+#include <opencv2/core/eigen.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/dnn.hpp>
+
+using std::string;
+using std::cout;
+using std::cin;
+using std::vector;
+using cv::Mat;
+using std::endl;
+
+using namespace boost::filesystem; //NOLINT
+
+class IOModule {
+public:
+    /**
+     * @brief default constructor
+     */
+    IOModule();
+
+    /**
+     * @brief readInput gets the input format from the user i.e., images - 1, 
+     *        2 - video input, 3 - live camera feed  
+     * @param None 
+     * @return None
+     */
+    void readInput();
+
+    /**
+     * @brief setCameraID sets the Camera device ID as given by the user.  
+     * @param None 
+     * @return None
+     */
+    bool setCameraID();
+
+    /**
+     * @brief getInputPath returns a vector of paths to images 
+     *                     present in a given directory.  
+     * @param imagesPath - path of the directory containing images
+     * @return vector containing paths to each image.
+     */    
+    vector<string> getInputPath(string imagesPath);
+
+    /**
+     * @brief readimage reads and displays image from a given path 
+     * @param path - path of an image file
+     * @return image matrix in openCV format
+     */    
+    Mat readImage(string path, bool show_image = false);
+
+    /**
+     * @brief returnInputType provides access to private variable inputType 
+     * @param None
+     * @return input type: images - 1, video - 2, camera feed - 3
+     */    
+    int returnInputType();
+
+    /**
+     * @brief returnCameraID provides acces to private member camera ID 
+     * @param None
+     * @return camera device ID
+     */    
+    int returnCameraID();
+
+    /**
+     * @brief drawBoundingBoxes draws bounding boxes and displays correspoinding
+     *                          object labels for an input image frame 
+     * @param boxCoords - vector of vector containing
+     *                    bounding box coordinates and dimensions
+     * @param labels - vector of labels corresponding to each bounding box
+     * @return None 
+     */ 
+    void drawBoundingBoxes(vector<vector<float>> boxCoords, vector<string> labels);
+
+    /**
+     * @brief saveTextFile writes detection output in a text file which contains
+     *                     coordinates and dimensions of the bounding box and 
+     *                     its corresponding label. 
+     * @param boxCoords - vector of vector containing
+     *                    bounding box coordinates and dimensions
+     * @param labels - vector of labels corresponding to each bounding box
+     * @return None 
+     */ 
+    void saveTextFile(vector<vector<float>> boxCoords, vector<string> labels);
+    
+    /**
+     * @brief default destructor
+     */    
+    ~IOModule();
+};
