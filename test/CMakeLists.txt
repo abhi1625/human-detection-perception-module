@@ -6,9 +6,13 @@ add_executable(
     DetectionTest.cpp
     IOModuleTest.cpp
     ImageProcessTest.cpp
+    PerceptionModuleTest.cpp
+    FrameTransformTest.cpp
     ../app/ImageInference.cpp
     ../app/ImageProcessing.cpp
     ../app/IOModule.cpp
+    ../app/FrameTransform.cpp
+    ../app/PerceptionModule.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
