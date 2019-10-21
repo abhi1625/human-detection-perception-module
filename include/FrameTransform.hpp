@@ -58,6 +58,9 @@ public:
      */ 
     cv::Mat baseToEnd(const Mat &coords);
 
+    /**
+     * @brief default destructor
+     */
     ~FrameTransform();
 };
 
