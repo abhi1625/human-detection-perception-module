@@ -105,7 +105,6 @@ vector<string> IOModule::getInputPath(string imagesPath) {
     directory_iterator it(p);
     // https://theboostcpplibraries.com/boost.filesystem-iterators
     while (it != directory_iterator{}) {
-        // path_string.emplace_back(it->path().string());
         pathString.emplace_back(it->path().string());
         it++;
     }
@@ -122,14 +121,14 @@ int IOModule::returnInputType() {
     return _inputType;
 }
 
-void IOModule::saveTextFile(vector<vector<float>> boxCords, 
+void IOModule::saveTextFile(vector<vector<float>> boxCoords, 
                             vector<std::string> labels,
                             vector<int> imageList) {
     outFile.open(outputDirectory + "/finalOutput.txt");
     // Iterate over each of the box coordinates
     outFile << "FrameID\t" << "ID\t" << "Label\t" << "x\t" << "y\t" << "z\t" << "w\t" << "h\n";  
     int i = 0;
-    for (auto& eachBox : boxCords) {
+    for (auto& eachBox : boxCoords) {
         outFile << imageList[i] << "\t" << i+1 << "\t" << labels[i] << "\t";
         for (auto& eachCord : eachBox) {
             outFile << eachCord << "\t";
@@ -141,13 +140,11 @@ void IOModule::saveTextFile(vector<vector<float>> boxCords,
     outFile.close();
 }
 
-void IOModule::drawBoundingBoxes(Mat& image, int imageLeft,
-                                int imageTop, int imageRight, int imageBottom) {
-    
-    cv::rectangle(image, cv::Point(imageLeft, imageTop), 
-                  cv::Point(imageRight, imageBottom), 
+void IOModule::drawBoundingBoxes(Mat& image, int boxLeft,
+                                int boxTop, int boxRight, int boxBottom) {
+    cv::rectangle(image, cv::Point(boxLeft, boxTop), 
+                  cv::Point(boxRight, boxBottom), 
                   cv::Scalar(0, 178, 0), 3);
-    
     }
 
 void IOModule::setDefaultInputs() {
