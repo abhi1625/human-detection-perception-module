@@ -34,4 +34,5 @@
 int main() {
     PerceptionModule detect;
     detect.runDetection(false, false);
+    return 0;
 }
