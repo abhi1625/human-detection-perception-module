@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# Human Detection Perception Module
 [![Build Status](https://travis-ci.org/kartikmadhira1/human-detection-perception-module.svg?branch=master)](https://travis-ci.org/kartikmadhira1/human-detection-perception-module)
 [![Coverage Status](https://coveralls.io/repos/github/kartikmadhira1/human-detection-perception-module/badge.svg?branch=master)](https://coveralls.io/github/kartikmadhira1/human-detection-perception-module?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
