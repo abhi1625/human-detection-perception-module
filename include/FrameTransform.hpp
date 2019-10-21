@@ -43,21 +43,44 @@ public:
     FrameTransform();
 
     /**
-     * @brief endToBase converts coordinates of the detected objects from sensor
-     *        end to robot's base frame.
-     * @param imgPoints - const reference to matrix of detected coordinates
-     * @return Matrix containing coordinates in robot's base frame
+     * @brief endToBase converts coordinates of the detected objects from 2D image
+     *        frame to 3D camera frame
+     * @param Boxes - const reference to vector containing bounding box information
+     * @return None
      */ 
-    cv::Mat endToBase(const cv::Mat &imgPoints);
+    void imageToCamera(const vector<cv::Rect> &Boxes);
 
     /**
-     * @brief baseToEnd converts coordinates of the detected objects from robot's
-     *        base frame to sensor frame.
-     * @param coords - const reference to image matrix containing detection
-     *                 coordinates in robot's base frame
-     * @return Matrix containing coordinates in sensor frame
+     * @brief baseToEnd converts coordinates of the detected objects from camera
+     *        frame to robot's base frame
+     * @param None
+     * @return None
      */ 
-    cv::Mat baseToEnd(const cv::Mat &coords);
+    void cameraToBase();
+
+    /**
+     * @brief provides access to private member coords3D
+     * @param None
+     * @return matrix containing 3D coordinates of the detections in robot's 
+     *         base frame
+     */ 
+    cv::Mat getCoords3D();
+
+    /**
+     * @brief provides access to private member coordsCam
+     * @param None
+     * @return matrix containing 3D coordinates of the detections in camera 
+     *         coordinate frame
+     */ 
+    cv::Mat getCoordsCam();
+
+    /**
+     * @brief returns 3D coordinates in desired format to save in text file 
+     * @param Boxes - const refernce to detected bounding boxes in the image 
+     * @return vector containing 3D coordinates and bounding box dimensions
+     *         in robot's base frame for each detection
+     */ 
+    vector<vector<float>> outputCoords(const vector<cv::Rect> &Boxes);
 
     /**
      * @brief default destructor
@@ -65,7 +88,14 @@ public:
     ~FrameTransform();
 
 private:
-    cv::Mat coords;       // Matrix containing coordinates in robot's base frame
-    cv::Mat imgPoints;    // Matrix containing coordinates in sensor frame
+    /**
+     * @brief Matrix containing coordinates in robot's base frame
+     */
+    cv::Mat coords3D;
+    
+    /**
+     * @brief Matrix containing coordinates in camera frame
+     */
+    cv::Mat coordsCam = cv::Mat::ones(1,3, CV_64F);
 };
 
