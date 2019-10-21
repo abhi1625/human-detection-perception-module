@@ -43,7 +43,7 @@ void IOModule::readInputType(std::istream& input) {
     cout << "Welcome to the Acme Robotics Perception App!\n";
     cout << "Enter type of input feed\n" 
          << "Key 1 - Image\n" 
-         << "Key 2 - Video\n"
+         << "Key 2 - Video (Provide full path, Ex. ../data/video.mp4)\n"
          << "Key 3 - Live camera\n" 
          << "Key 4 - Run Demo\n" << std::flush;
     // Loop in until proper digit is entered
@@ -149,5 +149,10 @@ void IOModule::drawBoundingBoxes(Mat& image, int boxLeft,
 
 void IOModule::setDefaultInputs() {
     inputDirectory = "../data/demoImages";
+    outputDirectory = "../data/output";
+}
+
+void IOModule::setDefaultVidInput() {
+    inputDirectory = "../data/demoVideo/demoVideo.mp4";
     outputDirectory = "../data/output";
 }

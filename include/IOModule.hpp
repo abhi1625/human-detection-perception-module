@@ -163,13 +163,17 @@ public:
 
     /**
      * @brief setDefaultInputs sets a default input and output directory for
-     *        the module
+     *        image pipelining test module
      */    
     void setDefaultInputs();
-    
+    /**
+     * @brief setDefaultVidInput sets a default input and output directory for
+     *        video pipelining test module
+     */
+    void IOModule::setDefaultVidInput();
     /**
      * @brief default destructor
-     */    
+     */
     ~IOModule();
 
 private:
