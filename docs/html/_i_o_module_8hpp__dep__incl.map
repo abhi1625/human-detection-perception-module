@@ -1,0 +1,17 @@
+<map id="include/IOModule.hpp" name="include/IOModule.hpp">
+<area shape="rect" id="node2" href="$_frame_transform_8hpp.html" title="include/FrameTransform.hpp" alt="" coords="333,80,521,107"/>
+<area shape="rect" id="node4" href="$_perception_module_8hpp.html" title="Header file for perception module which is a wrapper for all other modules. " alt="" coords="417,155,613,181"/>
+<area shape="rect" id="node8" href="$_frame_transform_test_8cpp.html" title="Test source file for frame transform module. " alt="" coords="197,155,392,181"/>
+<area shape="rect" id="node9" href="$_image_inference_8hpp.html" title="Header file for image&#45;inference module to run the forward pass for object detection. " alt="" coords="597,80,779,107"/>
+<area shape="rect" id="node11" href="$_detection_test_8cpp.html" title="Test source file for image&#45;inference module. " alt="" coords="824,155,979,181"/>
+<area shape="rect" id="node12" href="$_image_processing_8hpp.html" title="Header file for image&#45;processing module. " alt="" coords="855,80,1049,107"/>
+<area shape="rect" id="node15" href="$_i_o_module_8cpp.html" title="Source file for IOModule to handle input and output interface for the whole pipeline. " alt="" coords="1073,80,1201,107"/>
+<area shape="rect" id="node16" href="$_i_o_module_test_8cpp.html" title="Test source file for input&#45;output module. " alt="" coords="1225,80,1380,107"/>
+<area shape="rect" id="node3" href="$_frame_transform_8cpp.html" title="app/FrameTransform.cpp" alt="" coords="5,155,173,181"/>
+<area shape="rect" id="node5" href="$app_2main_8cpp.html" title="app/main.cpp" alt="" coords="302,229,402,256"/>
+<area shape="rect" id="node6" href="$_perception_module_8cpp.html" title="app/PerceptionModule.cpp" alt="" coords="427,229,603,256"/>
+<area shape="rect" id="node7" href="$_perception_module_test_8cpp.html" title="Test source file for perception module. " alt="" coords="627,229,829,256"/>
+<area shape="rect" id="node10" href="$_image_inference_8cpp.html" title="Source file for ImageInference module. " alt="" coords="637,155,800,181"/>
+<area shape="rect" id="node13" href="$_image_processing_8cpp.html" title="Source file for ImageProcessing to perform basic operations on images. " alt="" coords="1211,155,1384,181"/>
+<area shape="rect" id="node14" href="$_image_process_test_8cpp.html" title="Test source file for the Image processing module. " alt="" coords="1003,155,1186,181"/>
+</map>

@@ -1,0 +1,8 @@
+FrameID	ID	Label	x	y	z	w	h
+0	1	person	424	297	1	83	293	
+0	2	person	568	332	1	125	261	
+0	3	person	48	0	1	65	0	
+1	4	person	424	297	1	83	293	
+1	5	person	568	332	1	125	261	
+1	6	person	234	73	1	84	242	
+1	7	person	64	0	1	49	0	

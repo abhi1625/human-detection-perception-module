@@ -1,0 +1,6 @@
+<map id="IOModule::returnInputType" name="IOModule::returnInputType">
+<area shape="rect" id="node2" href="$class_perception_module_aba601091f507b9e5ba28460f422c635e.html#aba601091f507b9e5ba28460f422c635e" title="runDetection is the wrapper function to run the object detection pipeline. " alt="" coords="231,31,439,57"/>
+<area shape="rect" id="node5" href="$_i_o_module_test_8cpp_a1993c9502ff10b8531c1c049726879da.html#a1993c9502ff10b8531c1c049726879da" title="Test for read methods. " alt="" coords="307,81,363,108"/>
+<area shape="rect" id="node3" href="$app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="489,5,540,32"/>
+<area shape="rect" id="node4" href="$_perception_module_test_8cpp_a56d806934ed47f2cd5ed5a899341c081.html#a56d806934ed47f2cd5ed5a899341c081" title="Test for runDetection method. " alt="" coords="487,56,543,83"/>
+</map>

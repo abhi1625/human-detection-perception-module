@@ -1,0 +1,6 @@
+<map id="ImageInference::getBoxes" name="ImageInference::getBoxes">
+<area shape="rect" id="node2" href="$class_perception_module_aba601091f507b9e5ba28460f422c635e.html#aba601091f507b9e5ba28460f422c635e" title="runDetection is the wrapper function to run the object detection pipeline. " alt="" coords="228,31,436,57"/>
+<area shape="rect" id="node5" href="$_detection_test_8cpp_a724d65f05d5fe9f0843a4685920c6117.html#a724d65f05d5fe9f0843a4685920c6117" title="Test for inference module. " alt="" coords="304,81,360,108"/>
+<area shape="rect" id="node3" href="$app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="487,5,537,32"/>
+<area shape="rect" id="node4" href="$_perception_module_test_8cpp_a56d806934ed47f2cd5ed5a899341c081.html#a56d806934ed47f2cd5ed5a899341c081" title="Test for runDetection method. " alt="" coords="484,56,540,83"/>
+</map>

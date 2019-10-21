@@ -1,0 +1,13 @@
+<map id="testing::internal::ColoredPrintf" name="testing::internal::ColoredPrintf">
+<area shape="rect" id="node2" href="$namespacetesting_1_1internal_a4b24c851ab13569b1b15b3d259b60d2e.html#a4b24c851ab13569b1b15b3d259b60d2e" title="testing::internal::\lAlwaysFalse" alt="" coords="178,5,297,47"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal_1_1posix_a3117b067e1f942a2031e666953120ccc.html#a3117b067e1f942a2031e666953120ccc" title="testing::internal::\lposix::FileNo" alt="" coords="178,71,297,112"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_a0aefb9deb60e90f19c236559837303d8.html#a0aefb9deb60e90f19c236559837303d8" title="testing::internal::\lGetAnsiColorCode" alt="" coords="172,136,303,177"/>
+<area shape="rect" id="node7" href="$namespacetesting_1_1internal_1_1posix_a16ebe936b3a8ea462a94191635aedc27.html#a16ebe936b3a8ea462a94191635aedc27" title="testing::internal::\lposix::IsATTY" alt="" coords="178,201,297,243"/>
+<area shape="rect" id="node8" href="$namespacetesting_1_1internal_ac1db1b4603967a6c4404f31cbbac31a6.html#ac1db1b4603967a6c4404f31cbbac31a6" title="testing::internal::\lShouldUseColor" alt="" coords="178,267,297,308"/>
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal_a922c9da63cd4bf94fc473b9ecac76414.html#a922c9da63cd4bf94fc473b9ecac76414" title="testing::internal::\lAlwaysTrue" alt="" coords="391,5,510,47"/>
+<area shape="rect" id="node4" href="$namespacetesting_1_1internal_a527b9bcc13669b9a16400c8514266254.html#a527b9bcc13669b9a16400c8514266254" title="testing::internal::\lIsTrue" alt="" coords="639,5,758,47"/>
+<area shape="rect" id="node9" href="$namespacetesting_1_1internal_aebfd0cd34de52d7973a5b2d03ba848cf.html#aebfd0cd34de52d7973a5b2d03ba848cf" title="testing::internal::\lCaseInsensitiveCStringEquals" alt="" coords="351,233,551,275"/>
+<area shape="rect" id="node11" href="$namespacetesting_1_1internal_1_1posix_a1d5e3da5a27eed25986859fa83cafe95.html#a1d5e3da5a27eed25986859fa83cafe95" title="testing::internal::\lposix::GetEnv" alt="" coords="391,299,510,340"/>
+<area shape="rect" id="node10" href="$namespacetesting_1_1internal_ad5b31f61a3cc5b4226d3560f5b48f4dd.html#ad5b31f61a3cc5b4226d3560f5b48f4dd" title="testing::internal::\lCaseInsensitiveCStringEquals" alt="" coords="599,233,799,275"/>
+<area shape="rect" id="node12" href="$namespacetesting_1_1internal_1_1posix_a69b8278c59359dd6a6f941b4643db9fb.html#a69b8278c59359dd6a6f941b4643db9fb" title="testing::internal::\lposix::Abort" alt="" coords="639,299,758,340"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="upload.main" name="upload.main">
+<area shape="rect" id="node2" href="$namespaceupload_ad6226af96c9f1905602b8002bd5de952.html#ad6226af96c9f1905602b8002bd5de952" title="upload.RealMain" alt="" coords="145,201,264,228"/>
+<area shape="rect" id="node11" href="$namespaceupload_a79ce84c196c018f3b0c7ff7a9b626b58.html#a79ce84c196c018f3b0c7ff7a9b626b58" title="upload.StatusUpdate" alt="" coords="601,328,745,354"/>
+<area shape="rect" id="node3" href="$namespaceupload_ae12985a2c860c124c502dd2099b702eb.html#ae12985a2c860c124c502dd2099b702eb" title="upload.EncodeMultipartFormData" alt="" coords="565,226,781,253"/>
+<area shape="rect" id="node5" href="$namespaceupload_adea53186a1d73e92cc839b7c35c2c044.html#adea53186a1d73e92cc839b7c35c2c044" title="upload.ErrorExit" alt="" coords="1037,125,1152,152"/>
+<area shape="rect" id="node6" href="$namespaceupload_a1dadef480a702dbc5d0fb66203b9abe7.html#a1dadef480a702dbc5d0fb66203b9abe7" title="upload.GetRpcServer" alt="" coords="341,74,488,101"/>
+<area shape="rect" id="node8" href="$namespaceupload_a31390568253accd22ee51861eaeb99bd.html#a31390568253accd22ee51861eaeb99bd" title="upload.GuessVCS" alt="" coords="349,150,480,177"/>
+<area shape="rect" id="node12" href="$namespaceupload_a7ec83cb7f7bfb9109c19b6f91552b3ee.html#a7ec83cb7f7bfb9109c19b6f91552b3ee" title="upload.UploadSeparatePatches" alt="" coords="312,252,517,278"/>
+<area shape="rect" id="node4" href="$namespaceupload_a753a004706d964335ad218628e07b063.html#a753a004706d964335ad218628e07b063" title="upload.GetContentType" alt="" coords="829,226,989,253"/>
+<area shape="rect" id="node7" href="$namespaceupload_a4f169469a6d43221ebd38cfd546484e1.html#a4f169469a6d43221ebd38cfd546484e1" title="upload.GetEmail" alt="" coords="614,74,733,101"/>
+<area shape="rect" id="node9" href="$namespaceupload_afa542d3a5a4f4fce174a1c23644a9204.html#afa542d3a5a4f4fce174a1c23644a9204" title="upload.RunShellWithReturnCode" alt="" coords="566,176,781,202"/>
+<area shape="rect" id="node10" href="$namespaceupload_adddc423c49132e8879cbb25d6be2cf11.html#adddc423c49132e8879cbb25d6be2cf11" title="upload.RunShell" alt="" coords="851,176,968,202"/>
+<area shape="rect" id="node13" href="$namespaceupload_a9dd260785ca4cc97e245234811ef1949.html#a9dd260785ca4cc97e245234811ef1949" title="upload.SplitPatch" alt="" coords="611,277,735,304"/>
+</map>

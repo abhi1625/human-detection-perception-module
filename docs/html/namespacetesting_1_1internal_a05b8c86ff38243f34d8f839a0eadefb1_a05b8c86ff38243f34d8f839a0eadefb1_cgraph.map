@@ -1,0 +1,7 @@
+<map id="testing::internal::WideStringToUtf8" name="testing::internal::WideStringToUtf8">
+<area shape="rect" id="node2" href="$namespacetesting_1_1internal_a0c0f9558efb9abb965851c4738cdc725.html#a0c0f9558efb9abb965851c4738cdc725" title="testing::internal::\lCodePointToUtf8" alt="" coords="250,5,373,47"/>
+<area shape="rect" id="node4" href="$namespacetesting_1_1internal_ac8ef1bb10cd9e69de939789b759e6bc9.html#ac8ef1bb10cd9e69de939789b759e6bc9" title="testing::internal::\lCreateCodePointFromUtf16SurrogatePair" alt="" coords="180,71,443,112"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal_a681895f8cc32286211be9889da107394.html#a681895f8cc32286211be9889da107394" title="testing::internal::\lIsUtf16SurrogatePair" alt="" coords="239,136,383,177"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_ac0a2b7f69fc829d80a39e925b6417e39.html#ac0a2b7f69fc829d80a39e925b6417e39" title="testing::internal::\lStringStreamToString" alt="" coords="238,201,385,243"/>
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal_a2c54b453387aa8a18f2f3e09f10b5a7d.html#a2c54b453387aa8a18f2f3e09f10b5a7d" title="testing::internal::\lChopLowBits" alt="" coords="491,5,609,47"/>
+</map>

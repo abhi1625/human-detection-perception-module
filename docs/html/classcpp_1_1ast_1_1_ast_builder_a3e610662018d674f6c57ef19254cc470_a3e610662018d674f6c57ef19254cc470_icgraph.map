@@ -1,0 +1,8 @@
+<map id="cpp.ast.AstBuilder.HandleError" name="cpp.ast.AstBuilder.HandleError">
+<area shape="rect" id="node2" href="$classcpp_1_1ast_1_1_ast_builder_aebd0392eee56def849468af5b93b720a.html#aebd0392eee56def849468af5b93b720a" title="cpp.ast.AstBuilder.Generate" alt="" coords="233,5,420,32"/>
+<area shape="rect" id="node3" href="$classcpp_1_1ast_1_1_ast_builder_af22fb880867876144d20818391ad267a.html#af22fb880867876144d20818391ad267a" title="cpp.ast.AstBuilder.GetMethod" alt="" coords="228,113,425,140"/>
+<area shape="rect" id="node4" href="$classcpp_1_1ast_1_1_ast_builder_a93bd39632593bec36972355b7e1893e0.html#a93bd39632593bec36972355b7e1893e0" title="cpp.ast.AstBuilder.handle\l_class" alt="" coords="473,41,644,82"/>
+<area shape="rect" id="node5" href="$classcpp_1_1ast_1_1_ast_builder_a568860050542b53d3df9cf479f2a5e1c.html#a568860050542b53d3df9cf479f2a5e1c" title="cpp.ast.AstBuilder.handle\l_explicit" alt="" coords="473,106,644,147"/>
+<area shape="rect" id="node6" href="$classcpp_1_1ast_1_1_ast_builder_a0f4d74520697ec05eb6b549daada5a5d.html#a0f4d74520697ec05eb6b549daada5a5d" title="cpp.ast.AstBuilder.handle\l_template" alt="" coords="473,171,644,213"/>
+<area shape="rect" id="node7" href="$classcpp_1_1ast_1_1_ast_builder_a44710dc0b8e5bdbecaa56f7c4b59c046.html#a44710dc0b8e5bdbecaa56f7c4b59c046" title="cpp.ast.AstBuilder.handle\l_virtual" alt="" coords="473,237,644,278"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="testing::internal::HasNewFatalFailureHelper::ReportTestPartResult" name="testing::internal::HasNewFatalFailureHelper::ReportTestPartResult">
+<area shape="rect" id="node2" href="$classtesting_1_1_test_part_result_a34d31718b5fc6c06f73d03e8dbb1aa9e.html#a34d31718b5fc6c06f73d03e8dbb1aa9e" title="testing::TestPartResult\l::fatally_failed" alt="" coords="257,39,415,80"/>
+<area shape="rect" id="node7" href="$classtesting_1_1_test_part_result_reporter_interface_aa2f920e7a5a0a6d0faf19e3727928c22.html#aa2f920e7a5a0a6d0faf19e3727928c22" title="testing::TestPartResultReporter\lInterface::ReportTestPartResult" alt="" coords="232,104,440,145"/>
+<area shape="rect" id="node3" href="$namespacetesting_a7b802e532fd68749765cb7dc156130db.html#a7b802e532fd68749765cb7dc156130db" title="testing::operator\&lt;\&lt;" alt="" coords="488,46,620,73"/>
+<area shape="rect" id="node4" href="$classtesting_1_1_message_abe8c1b7584aa670dd0e2413e8317a937.html#abe8c1b7584aa670dd0e2413e8317a937" title="testing::Message::GetString" alt="" coords="668,46,853,73"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1scoped__ptr_adc8f8fcb63ce69f80f011456e6d2f08d.html#adc8f8fcb63ce69f80f011456e6d2f08d" title="testing::internal::\lscoped_ptr::get" alt="" coords="915,5,1034,47"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_ac0a2b7f69fc829d80a39e925b6417e39.html#ac0a2b7f69fc829d80a39e925b6417e39" title="testing::internal::\lStringStreamToString" alt="" coords="901,71,1048,112"/>
+</map>

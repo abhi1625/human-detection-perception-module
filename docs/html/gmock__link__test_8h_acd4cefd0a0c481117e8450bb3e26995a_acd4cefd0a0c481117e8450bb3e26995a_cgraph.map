@@ -1,0 +1,10 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$namespacetesting_af6d1c13e9376c77671e37545cd84359c.html#af6d1c13e9376c77671e37545cd84359c" title="testing::Return" alt="" coords="141,5,249,32"/>
+<area shape="rect" id="node4" href="$namespacetesting_addbdb8c0902ab09cade24fa6db7c0073.html#addbdb8c0902ab09cade24fa6db7c0073" title="testing::StrCaseEq" alt="" coords="128,56,261,83"/>
+<area shape="rect" id="node6" href="$namespacetesting_a9596fd67bdd5df195bc54382f91a1906.html#a9596fd67bdd5df195bc54382f91a1906" title="testing::StrCaseNe" alt="" coords="127,107,262,133"/>
+<area shape="rect" id="node7" href="$namespacetesting_a154de81376ae7d584c6e5a619b45fb09.html#a154de81376ae7d584c6e5a619b45fb09" title="testing::StrEq" alt="" coords="143,157,246,184"/>
+<area shape="rect" id="node8" href="$namespacetesting_a6f6b8af3d19cb969df0eb995c47a14d2.html#a6f6b8af3d19cb969df0eb995c47a14d2" title="testing::StrNe" alt="" coords="143,208,246,235"/>
+<area shape="rect" id="node9" href="$class_interface_a65d6ae604e7e9a513aec72c9c94e0b97.html#a65d6ae604e7e9a513aec72c9c94e0b97" title="Interface::VoidFromString" alt="" coords="109,259,280,285"/>
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal_a0f6d06bf8c3093b9c22bb08723db201e.html#a0f6d06bf8c3093b9c22bb08723db201e" title="testing::internal::move" alt="" coords="339,5,490,32"/>
+<area shape="rect" id="node5" href="$namespacetesting_a667ca94f190ec2e17ee2fbfdb7d3da04.html#a667ca94f190ec2e17ee2fbfdb7d3da04" title="testing::MakePolymorphic\lMatcher" alt="" coords="328,125,501,166"/>
+</map>

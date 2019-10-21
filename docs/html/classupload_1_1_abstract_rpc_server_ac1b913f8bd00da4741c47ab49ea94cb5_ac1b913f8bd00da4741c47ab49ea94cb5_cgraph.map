@@ -1,0 +1,12 @@
+<map id="upload.AbstractRpcServer.Send" name="upload.AbstractRpcServer.Send">
+<area shape="rect" id="node2" href="$classupload_1_1_abstract_rpc_server.html#a8517a9d90ee2478752a53302f01d868d" title="upload.AbstractRpcServer.\l_Authenticate" alt="" coords="281,5,460,47"/>
+<area shape="rect" id="node3" href="$classupload_1_1_abstract_rpc_server.html#a1553c79619eec0770932cd4fa325243c" title="upload.AbstractRpcServer.\l_CreateRequest" alt="" coords="281,71,460,112"/>
+<area shape="rect" id="node4" href="$namespaceupload_ae12985a2c860c124c502dd2099b702eb.html#ae12985a2c860c124c502dd2099b702eb" title="upload.EncodeMultipartFormData" alt="" coords="263,137,479,163"/>
+<area shape="rect" id="node5" href="$namespaceupload_a753a004706d964335ad218628e07b063.html#a753a004706d964335ad218628e07b063" title="upload.GetContentType" alt="" coords="554,175,714,202"/>
+<area shape="rect" id="node6" href="$namespaceupload_adea53186a1d73e92cc839b7c35c2c044.html#adea53186a1d73e92cc839b7c35c2c044" title="upload.ErrorExit" alt="" coords="577,339,691,366"/>
+<area shape="rect" id="node7" href="$namespaceupload_a4f169469a6d43221ebd38cfd546484e1.html#a4f169469a6d43221ebd38cfd546484e1" title="upload.GetEmail" alt="" coords="575,251,693,278"/>
+<area shape="rect" id="node8" href="$namespaceupload_a1dadef480a702dbc5d0fb66203b9abe7.html#a1dadef480a702dbc5d0fb66203b9abe7" title="upload.GetRpcServer" alt="" coords="297,289,444,315"/>
+<area shape="rect" id="node9" href="$namespaceupload_adddc423c49132e8879cbb25d6be2cf11.html#adddc423c49132e8879cbb25d6be2cf11" title="upload.RunShell" alt="" coords="312,390,429,417"/>
+<area shape="rect" id="node10" href="$namespaceupload_afa542d3a5a4f4fce174a1c23644a9204.html#afa542d3a5a4f4fce174a1c23644a9204" title="upload.RunShellWithReturnCode" alt="" coords="527,390,741,417"/>
+<area shape="rect" id="node11" href="$namespaceupload_a79ce84c196c018f3b0c7ff7a9b626b58.html#a79ce84c196c018f3b0c7ff7a9b626b58" title="upload.StatusUpdate" alt="" coords="299,491,443,518"/>
+</map>

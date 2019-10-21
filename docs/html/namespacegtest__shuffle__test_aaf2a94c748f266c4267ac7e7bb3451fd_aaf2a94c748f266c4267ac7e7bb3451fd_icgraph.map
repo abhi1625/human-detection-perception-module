@@ -1,0 +1,7 @@
+<map id="gtest_shuffle_test.RandomSeedFlag" name="gtest_shuffle_test.RandomSeedFlag">
+<area shape="rect" id="node2" href="$namespacegtest__shuffle__test_a51dcc55df3ebd76c676298ef9b4fea19.html#a51dcc55df3ebd76c676298ef9b4fea19" title="gtest_shuffle_test.Calculate\lTestLists" alt="" coords="259,5,445,47"/>
+<area shape="rect" id="node4" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_ada78bae27e0d82d07bd663d53a36552b.html#ada78bae27e0d82d07bd663d53a36552b" title="gtest_shuffle_test.GTest\lShuffleUnitTest.testShuffleGenerates\lNewOrderInEachIteration" alt="" coords="232,70,472,126"/>
+<area shape="rect" id="node5" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_a77b83a9870ad8d68524e1177f5320fb0.html#a77b83a9870ad8d68524e1177f5320fb0" title="gtest_shuffle_test.GTest\lShuffleUnitTest.testShuffleRestores\lOrderAfterEachIteration" alt="" coords="235,150,469,206"/>
+<area shape="rect" id="node6" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_abd33c5ef01ce6d1d025ebcc816d47c19.html#abd33c5ef01ce6d1d025ebcc816d47c19" title="gtest_shuffle_test.GTest\lShuffleUnitTest.testShuffleSharded\lTestsPreservesPartition" alt="" coords="238,230,466,286"/>
+<area shape="rect" id="node3" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_adf9841ae9c86eaafc3c3f7c9690c7bd8.html#adf9841ae9c86eaafc3c3f7c9690c7bd8" title="gtest_shuffle_test.GTest\lShuffleUnitTest.setUp" alt="" coords="520,5,687,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="testing::AssertionResult::operator&lt;&lt;" name="testing::AssertionResult::operator&lt;&lt;">
+<area shape="rect" id="node2" href="$namespacetesting_a75cb789614cb1c28c34627a4a3c053df.html#a75cb789614cb1c28c34627a4a3c053df" title="testing::AssertionFailure" alt="" coords="227,5,390,32"/>
+<area shape="rect" id="node4" href="$namespacetesting_ac1d0baedb17286c5c6c87bd1a45da8ac.html#ac1d0baedb17286c5c6c87bd1a45da8ac" title="testing::AssertionSuccess" alt="" coords="221,56,396,83"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_message_abe8c1b7584aa670dd0e2413e8317a937.html#abe8c1b7584aa670dd0e2413e8317a937" title="testing::Message::GetString" alt="" coords="216,107,401,133"/>
+<area shape="rect" id="node3" href="$classtesting_1_1_assertion_result_a27788116f03f90aec4daf592fd809ead.html#a27788116f03f90aec4daf592fd809ead" title="testing::AssertionResult\l::AssertionResult" alt="" coords="449,15,612,57"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_ac0a2b7f69fc829d80a39e925b6417e39.html#ac0a2b7f69fc829d80a39e925b6417e39" title="testing::internal::\lStringStreamToString" alt="" coords="457,90,604,131"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1scoped__ptr_adc8f8fcb63ce69f80f011456e6d2f08d.html#adc8f8fcb63ce69f80f011456e6d2f08d" title="testing::internal::\lscoped_ptr::get" alt="" coords="471,155,590,197"/>
+</map>

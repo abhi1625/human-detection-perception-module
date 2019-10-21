@@ -1,0 +1,19 @@
+<map id="upload.RunShellWithReturnCode" name="upload.RunShellWithReturnCode">
+<area shape="rect" id="node2" href="$classupload_1_1_subversion_v_c_s_a29dec4941de0824734d6842a2f33ffc3.html#a29dec4941de0824734d6842a2f33ffc3" title="upload.SubversionVCS.Get\lBaseFile" alt="" coords="784,65,967,107"/>
+<area shape="rect" id="node3" href="$classupload_1_1_git_v_c_s_a70ddb65a6b512b8cb8cc4affa37ff9b4.html#a70ddb65a6b512b8cb8cc4affa37ff9b4" title="upload.GitVCS.GetBaseFile" alt="" coords="268,1043,453,1070"/>
+<area shape="rect" id="node4" href="$classupload_1_1_mercurial_v_c_s_a0cdc0cbe6ac4daab82f5f01e6ae2e670.html#a0cdc0cbe6ac4daab82f5f01e6ae2e670" title="upload.MercurialVCS.GetBaseFile" alt="" coords="1015,969,1236,995"/>
+<area shape="rect" id="node5" href="$classupload_1_1_subversion_v_c_s_ac3785eb1fa561088206d01570f9fe982.html#ac3785eb1fa561088206d01570f9fe982" title="upload.SubversionVCS.Get\lStatus" alt="" coords="527,65,710,107"/>
+<area shape="rect" id="node6" href="$namespaceupload_a31390568253accd22ee51861eaeb99bd.html#a31390568253accd22ee51861eaeb99bd" title="upload.GuessVCS" alt="" coords="295,969,426,995"/>
+<area shape="rect" id="node9" href="$namespaceupload_adddc423c49132e8879cbb25d6be2cf11.html#adddc423c49132e8879cbb25d6be2cf11" title="upload.RunShell" alt="" coords="302,575,419,602"/>
+<area shape="rect" id="node18" href="$classupload_1_1_abstract_rpc_server_ac1b913f8bd00da4741c47ab49ea94cb5.html#ac1b913f8bd00da4741c47ab49ea94cb5" title="upload.AbstractRpcServer.Send" alt="" coords="514,867,723,894"/>
+<area shape="rect" id="node7" href="$namespaceupload_ad6226af96c9f1905602b8002bd5de952.html#ad6226af96c9f1905602b8002bd5de952" title="upload.RealMain" alt="" coords="559,969,678,995"/>
+<area shape="rect" id="node8" href="$namespaceupload_aef3fcf7a8d77d13ba75adbf58b6c43ee.html#aef3fcf7a8d77d13ba75adbf58b6c43ee" title="upload.main" alt="" coords="829,969,921,995"/>
+<area shape="rect" id="node10" href="$classupload_1_1_mercurial_v_c_s_a33890f442dedbb7d9fd45c08b5baed56.html#a33890f442dedbb7d9fd45c08b5baed56" title="upload.MercurialVCS.\l__init__" alt="" coords="544,527,693,568"/>
+<area shape="rect" id="node11" href="$classupload_1_1_subversion_v_c_s_a07c2d341f2c7df2772dd7f85e89b0212.html#a07c2d341f2c7df2772dd7f85e89b0212" title="upload.SubversionVCS.GenerateDiff" alt="" coords="501,617,736,643"/>
+<area shape="rect" id="node12" href="$classupload_1_1_git_v_c_s_a3ebfc01cebc9b585706ad3f4389a8833.html#a3ebfc01cebc9b585706ad3f4389a8833" title="upload.GitVCS.GenerateDiff" alt="" coords="525,742,712,769"/>
+<area shape="rect" id="node13" href="$classupload_1_1_mercurial_v_c_s_a6c05746012d8cd435c94ace1465671ef.html#a6c05746012d8cd435c94ace1465671ef" title="upload.MercurialVCS.GenerateDiff" alt="" coords="507,817,730,843"/>
+<area shape="rect" id="node14" href="$classupload_1_1_subversion_v_c_s_a494ba1010992d83cac015bc396ab693a.html#a494ba1010992d83cac015bc396ab693a" title="upload.SubversionVCS.Get\lUnknownFiles" alt="" coords="527,207,710,248"/>
+<area shape="rect" id="node15" href="$classupload_1_1_git_v_c_s_ae4e8c0e9fa01619c6a5c76d1ab84b995.html#ae4e8c0e9fa01619c6a5c76d1ab84b995" title="upload.GitVCS.GetUnknown\lFiles" alt="" coords="524,296,713,337"/>
+<area shape="rect" id="node16" href="$classupload_1_1_mercurial_v_c_s_a6190899fb86cd09ad84cc5d4b0ebd2f3.html#a6190899fb86cd09ad84cc5d4b0ebd2f3" title="upload.MercurialVCS.GetUnknown\lFiles" alt="" coords="506,385,731,427"/>
+<area shape="rect" id="node17" href="$classupload_1_1_subversion_v_c_s_a7d22d459469a757270502ce0dccacbd2.html#a7d22d459469a757270502ce0dccacbd2" title="upload.SubversionVCS.GuessBase" alt="" coords="504,475,733,502"/>
+</map>

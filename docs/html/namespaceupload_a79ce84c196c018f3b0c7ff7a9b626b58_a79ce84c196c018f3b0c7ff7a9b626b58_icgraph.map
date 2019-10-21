@@ -1,0 +1,10 @@
+<map id="upload.StatusUpdate" name="upload.StatusUpdate">
+<area shape="rect" id="node2" href="$classupload_1_1_subversion_v_c_s_a29dec4941de0824734d6842a2f33ffc3.html#a29dec4941de0824734d6842a2f33ffc3" title="upload.SubversionVCS.Get\lBaseFile" alt="" coords="211,29,393,71"/>
+<area shape="rect" id="node3" href="$classupload_1_1_mercurial_v_c_s_a0cdc0cbe6ac4daab82f5f01e6ae2e670.html#a0cdc0cbe6ac4daab82f5f01e6ae2e670" title="upload.MercurialVCS.GetBaseFile" alt="" coords="841,171,1063,198"/>
+<area shape="rect" id="node4" href="$namespaceupload_aef3fcf7a8d77d13ba75adbf58b6c43ee.html#aef3fcf7a8d77d13ba75adbf58b6c43ee" title="upload.main" alt="" coords="701,146,793,173"/>
+<area shape="rect" id="node5" href="$namespaceupload_ad6226af96c9f1905602b8002bd5de952.html#ad6226af96c9f1905602b8002bd5de952" title="upload.RealMain" alt="" coords="495,197,613,223"/>
+<area shape="rect" id="node6" href="$classupload_1_1_abstract_rpc_server_ac1b913f8bd00da4741c47ab49ea94cb5.html#ac1b913f8bd00da4741c47ab49ea94cb5" title="upload.AbstractRpcServer.Send" alt="" coords="197,247,407,274"/>
+<area shape="rect" id="node7" href="$classupload_1_1_version_control_system_a7e334f967301b9e85e5a9c39f5036823.html#a7e334f967301b9e85e5a9c39f5036823" title="upload.VersionControlSystem.\lUploadBaseFiles" alt="" coords="203,349,401,391"/>
+<area shape="rect" id="node9" href="$namespaceupload_a7ec83cb7f7bfb9109c19b6f91552b3ee.html#a7ec83cb7f7bfb9109c19b6f91552b3ee" title="upload.UploadSeparatePatches" alt="" coords="199,298,405,325"/>
+<area shape="rect" id="node8" href="$classupload_1_1_version_control_system_a812c3b3daf90c88b015fa4b26252e291.html#a812c3b3daf90c88b015fa4b26252e291" title="upload.VersionControlSystem.\lGetBaseFiles" alt="" coords="455,349,653,391"/>
+</map>

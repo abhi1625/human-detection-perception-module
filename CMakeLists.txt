@@ -7,8 +7,12 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 # We probably don't want this to run on every build.
 option(COVERAGE "Generate Coverage Data" OFF)
 
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS})
+find_package(OpenCV 3.4.2 REQUIRED)
+find_package( Boost REQUIRED COMPONENTS system filesystem)
+
+include_directories( ${OpenCV_INCLUDE_DIRS} ${Boost_INCLUDE_LIBS})
+link_directories(${Boost_LIBRARY_DIRS})
+
 
 if (COVERAGE)
     include(CodeCoverage)

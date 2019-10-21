@@ -1,0 +1,4 @@
+var classtesting_1_1gtest__printers__test_1_1_allows_generic_streaming_and_implicit_conversion_template =
+[
+    [ "operator bool", "classtesting_1_1gtest__printers__test_1_1_allows_generic_streaming_and_implicit_conversion_template_a149a95a572a5ef546d852ba012c6226c.html#a149a95a572a5ef546d852ba012c6226c", null ]
+];

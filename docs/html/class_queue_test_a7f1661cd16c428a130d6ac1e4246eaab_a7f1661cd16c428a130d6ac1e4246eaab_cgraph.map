@@ -1,0 +1,7 @@
+<map id="QueueTest::MapTester" name="QueueTest::MapTester">
+<area shape="rect" id="node2" href="$class_queue_test_a2c7e0d1edb558dbbc4c085316d3d1ee6.html#a2c7e0d1edb558dbbc4c085316d3d1ee6" title="QueueTest::Double" alt="" coords="209,5,344,32"/>
+<area shape="rect" id="node3" href="$class_queue_a71aa0154ef75bb87a53b6af1829fcd5e.html#a71aa0154ef75bb87a53b6af1829fcd5e" title="Queue::Head" alt="" coords="227,56,326,83"/>
+<area shape="rect" id="node4" href="$class_queue_a7cb2f6585319ba1fd19d2347d95e71c1.html#a7cb2f6585319ba1fd19d2347d95e71c1" title="Queue::Map" alt="" coords="230,107,323,133"/>
+<area shape="rect" id="node5" href="$class_queue_node_a8a9fdf488da06533360999ef85db56ea.html#a8a9fdf488da06533360999ef85db56ea" title="QueueNode::next" alt="" coords="215,157,339,184"/>
+<area shape="rect" id="node6" href="$class_queue_a8d69a34b2dfccbf1343b7fc4ba35da90.html#a8d69a34b2dfccbf1343b7fc4ba35da90" title="Queue::Size" alt="" coords="229,208,324,235"/>
+</map>
