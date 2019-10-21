@@ -62,5 +62,9 @@ public:
      * @brief default destructor
      */
     ~FrameTransform();
+
+private:
+    cv::Mat coords;       // Matrix containing coordinates in robot's base frame
+    cv::Mat imgPoints;    // Matrix containing coordinates in sensor frame
 };
 
