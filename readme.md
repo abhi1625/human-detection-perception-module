@@ -74,7 +74,9 @@ doxygen ./Doxygen
 ## Product Backlog Schedule
 [![Backlog: AIP](https://img.shields.io/badge/Backlog-AIP-green.svg)](https://docs.google.com/spreadsheets/d/1X_c9bMi0b7AIUzMgMdLq84g2H6-rCiPsTc2X1IaxRng/edit?usp=sharing)
 
-Agile Iterative Process was followed while developing this software package. The product backlog and iteration schedules can be seen [here](https://docs.google.com/spreadsheets/d/1X_c9bMi0b7AIUzMgMdLq84g2H6-rCiPsTc2X1IaxRng/edit?usp=sharing)
+Agile Iterative Process was followed while developing this software package. The product backlog and iteration schedules can be seen [here](https://docs.google.com/spreadsheets/d/1X_c9bMi0b7AIUzMgMdLq84g2H6-rCiPsTc2X1IaxRng/edit?usp=sharing).
+
+For more details on how the work was carried out, see the [sprint planning sheet](https://docs.google.com/document/d/1Q4IzRsmCA4za4dVSOyH8GB7yYPHi8W1GhDoZ9FRJOMo/edit?usp=sharing).
 
 ## About the authors
  - [Abhinav Modi](https://github.com/abhi1625) - Graduate student pursuing Masters of Engg. in Robotics at University of Maryland. Here is a link to my [website](abhi1625.github.io) where you can view some of my other projects.
