@@ -41,7 +41,6 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <boost/filesystem.hpp>
-#include <opencv2/core/eigen.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/dnn.hpp>
@@ -170,7 +169,7 @@ public:
      * @brief setDefaultVidInput sets a default input and output directory for
      *        video pipelining test module
      */
-    void IOModule::setDefaultVidInput();
+    void setDefaultVidInput();
     /**
      * @brief default destructor
      */

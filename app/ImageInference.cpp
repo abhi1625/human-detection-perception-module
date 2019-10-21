@@ -146,3 +146,7 @@ vector<cv::Rect> ImageInference::getBoxes() {
     vector<cv::Rect> _coordinates = boxCords;
     return _coordinates;
 }
+
+ImageInference::~ImageInference() {
+
+}

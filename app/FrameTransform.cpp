@@ -31,17 +31,20 @@
  * @author     : Abhinav Modi
  * @created on : Oct 21, 2019
  */
+// Copyright 2019 Kartik Madhira, Abhinav Modi
+
 #include "../include/FrameTransform.hpp"
 
 FrameTransform::FrameTransform() {
 }
 
-void FramTransform::imageToCamera(const vector<cv::Rect> &Boxes) {
+void FrameTransform::imageToCamera(const vector<cv::Rect> &Boxes) {
     // Define a matrix for camera intrinsics - assumed identity for now
     cv::Mat cameraMatrix = cv::Mat::eye(3, 3, CV_64F);
     cv::Mat cameraMatrixInv = cameraMatrix.inv();
     // Convert vector of boxes to a matrix with box coordinates
     for (auto &box : Boxes) {
+        // coordsCam.push_back(cv::Point3f(box.x, box.y, 1));
         vector<int> v{box.x, box.y, 1};
         cv::Mat _row(1, v.size(), CV_64F, v.data()); 
         cv::vconcat(coordsCam, _row, coordsCam);

@@ -85,12 +85,12 @@ TEST(checkInputImage, testReadImage) {
  */
 TEST(checkSavedFile, testSavedFile) {
     IOModule ioHandler;
-    vector<vector<float>> coordinates {{2.0, 4.0, 4.0, 8.0}};
+    vector<vector<float>> coordinates {{2.0, 4.0, 4.0, 3.0, 8.0}};
     vector<string> labels {"person"};
     std::istringstream outputDir("../data");
-
+    vector<int> imageList {1};
     ioHandler.readOutputDir(outputDir);
-    ioHandler.saveTextFile(coordinates, labels);
+    ioHandler.saveTextFile(coordinates, labels, imageList);
     string line;
     std::ifstream savedFile("../data/finalOutput.txt");
     std::getline(savedFile, line);
@@ -99,11 +99,13 @@ TEST(checkSavedFile, testSavedFile) {
     std::istream_iterator<string> beg(buf), end;
     vector<string> values(beg, end);
 
-    ASSERT_EQ(values[0], "person");
+    ASSERT_EQ(values[0], "1");
     ASSERT_EQ(values[1], "1");
-    ASSERT_EQ(values[2], "2");
-    ASSERT_EQ(values[3], "4");
+    ASSERT_EQ(values[2], "person");
+    ASSERT_EQ(values[3], "2");
     ASSERT_EQ(values[4], "4");
-    ASSERT_EQ(values[5], "8");
+    ASSERT_EQ(values[5], "4");
+    ASSERT_EQ(values[6], "3");
+    ASSERT_EQ(values[7], "8");
     std::remove("../data/finalOutput.txt");
 }

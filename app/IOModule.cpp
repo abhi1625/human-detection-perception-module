@@ -31,7 +31,10 @@
  * @created on : Oct 21, 2019
  */
 
+// Copyright 2019 Kartik Madhira, Abhinav Modi
+
 #include "../include/IOModule.hpp"
+
 
 IOModule::IOModule() {
 
@@ -43,9 +46,10 @@ void IOModule::readInputType(std::istream& input) {
     cout << "Welcome to the Acme Robotics Perception App!\n";
     cout << "Enter type of input feed\n" 
          << "Key 1 - Image\n" 
-         << "Key 2 - Video (Provide full path, Ex. ../data/video.mp4)\n"
+         << "Key 2 - Video(Provide full path)\n"
          << "Key 3 - Live camera\n" 
-         << "Key 4 - Run Demo\n" << std::flush;
+         << "Key 4 - Run Images Demo\n" << std::flush;
+
     // Loop in until proper digit is entered
     input >> inputType;
     // Check if input is valid
@@ -105,6 +109,7 @@ vector<string> IOModule::getInputPath(string imagesPath) {
     directory_iterator it(p);
     // https://theboostcpplibraries.com/boost.filesystem-iterators
     while (it != directory_iterator{}) {
+        // path_string.emplace_back(it->path().string());
         pathString.emplace_back(it->path().string());
         it++;
     }
@@ -121,14 +126,14 @@ int IOModule::returnInputType() {
     return _inputType;
 }
 
-void IOModule::saveTextFile(vector<vector<float>> boxCoords, 
+void IOModule::saveTextFile(vector<vector<float>> boxCords, 
                             vector<std::string> labels,
                             vector<int> imageList) {
     outFile.open(outputDirectory + "/finalOutput.txt");
     // Iterate over each of the box coordinates
     outFile << "FrameID\t" << "ID\t" << "Label\t" << "x\t" << "y\t" << "z\t" << "w\t" << "h\n";  
     int i = 0;
-    for (auto& eachBox : boxCoords) {
+    for (auto& eachBox : boxCords) {
         outFile << imageList[i] << "\t" << i+1 << "\t" << labels[i] << "\t";
         for (auto& eachCord : eachBox) {
             outFile << eachCord << "\t";
@@ -140,11 +145,13 @@ void IOModule::saveTextFile(vector<vector<float>> boxCoords,
     outFile.close();
 }
 
-void IOModule::drawBoundingBoxes(Mat& image, int boxLeft,
-                                int boxTop, int boxRight, int boxBottom) {
-    cv::rectangle(image, cv::Point(boxLeft, boxTop), 
-                  cv::Point(boxRight, boxBottom), 
+void IOModule::drawBoundingBoxes(Mat& image, int imageLeft,
+                                int imageTop, int imageRight, int imageBottom) {
+    
+    cv::rectangle(image, cv::Point(imageLeft, imageTop), 
+                  cv::Point(imageRight, imageBottom), 
                   cv::Scalar(0, 178, 0), 3);
+    
     }
 
 void IOModule::setDefaultInputs() {
@@ -155,4 +162,8 @@ void IOModule::setDefaultInputs() {
 void IOModule::setDefaultVidInput() {
     inputDirectory = "../data/demoVideo/demoVideo.mp4";
     outputDirectory = "../data/output";
+}
+
+IOModule::~IOModule() {
+
 }
