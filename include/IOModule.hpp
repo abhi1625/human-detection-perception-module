@@ -61,21 +61,49 @@ public:
      * @brief default constructor
      */
     IOModule();
-
+    
     /**
      * @brief readInput gets the input format from the user i.e., images - 1, 
      *        2 - video input, 3 - live camera feed  
-     * @param None 
+     * @param input - reference to an input stream object to read user input  
      * @return None
      */
-    void readInput();
+    void readInputType(std::istream& input);
 
     /**
-     * @brief setCameraID sets the Camera device ID as given by the user.  
-     * @param None 
+     * @brief readInputDir gets and stores the input directory from the user  
+     * @param input - reference to an input stream object to read user input  
      * @return None
      */
-    bool setCameraID();
+    void readInputDir(std::istream& input);
+
+    /**
+     * @brief readOutputDir gets and stores the output directory from the user  
+     * @param input - reference to an input stream object to read user input  
+     * @return None
+     */
+    void readOutputDir(std::istream& input);
+
+    /**
+     * @brief setCameraID sets the Camera device ID as given by the user
+     * @param input - reference to an input stream object to read user input 
+     * @return None
+     */
+    void setCameraID(std::istream& input);
+
+    /**
+     * @brief returnInputDir provides access to private member input directory  
+     * @param None
+     * @return path of input directory
+     */
+    string returnInputDir();
+
+    /**
+     * @brief returnOutputDir provides access to private member output directory  
+     * @param None
+     * @return path of output directory
+     */
+    string returnOutputDir();
 
     /**
      * @brief getInputPath returns a vector of paths to images 
@@ -107,14 +135,17 @@ public:
     int returnCameraID();
 
     /**
-     * @brief drawBoundingBoxes draws bounding boxes and displays correspoinding
-     *                          object labels for an input image frame 
-     * @param boxCoords - vector of vector containing
-     *                    bounding box coordinates and dimensions
-     * @param labels - vector of labels corresponding to each bounding box
+     * @brief drawBoundingBoxes draws bounding boxes around detected objects in
+     *        an input image frame 
+     * @param image - image matrix on which boundign box is drawn
+     * @param boxLeft - left-most coordinate of the bounding box
+     * @param boxTop - top-most coordinate of the bounding box
+     * @param boxRight - right-most coordinate of the bounding box
+     * @param boxBottom - bottom-most coordinate of the bounding box
      * @return None 
      */ 
-    void drawBoundingBoxes(vector<vector<float>> boxCoords, vector<string> labels);
+    void drawBoundingBoxes(Mat &image, int boxLeft,
+                          int boxTop, int boxRight, int boxBottom);
 
     /**
      * @brief saveTextFile writes detection output in a text file which contains
@@ -123,9 +154,18 @@ public:
      * @param boxCoords - vector of vector containing
      *                    bounding box coordinates and dimensions
      * @param labels - vector of labels corresponding to each bounding box
+     * @param imageList - vector containing list of images to assign frame ID to
+     *                    bounding boxes
      * @return None 
      */ 
-    void saveTextFile(vector<vector<float>> boxCoords, vector<string> labels);
+    void saveTextFile(vector<vector<float>> boxCoords, vector<string> labels,
+                     vector<int> imageList);
+
+    /**
+     * @brief setDefaultInputs sets a default input and output directory for
+     *        the module
+     */    
+    void setDefaultInputs();
     
     /**
      * @brief default destructor
@@ -137,4 +177,5 @@ private:
     int inputType;              // id assigned to input type: images - 1, video - 2, camera-feed - 3
     string outputDirectory;     // path to directory in which text file will be saved
     int cameraID;               // device ID of the camera from which data is to be read
+    std::ofstream outFile;      // output stream object to save output text file.
 };
