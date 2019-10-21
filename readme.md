@@ -1,7 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.org/kartikmadhira1/human-detection-perception-module.svg?branch=master)](https://travis-ci.org/kartikmadhira1/human-detection-perception-module)
 [![Coverage Status](https://coveralls.io/repos/github/kartikmadhira1/human-detection-perception-module/badge.svg?branch=master)](https://coveralls.io/github/kartikmadhira1/human-detection-perception-module?branch=master)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
 
@@ -38,6 +37,15 @@ cmake ..
 make
 ```
 ## Running the module
+#### Running the demo
+Once you have successfully built the package, go to the build folder and run:
+```
+./app/shell-app
+```
+When the program asks to enter `Input type` press `4`. This will use the default input nad output directories and run the demo. 
+**Note:** Press any key to continue once an image is displayed.
+
+#### Running the app and tests
 ```
 Run tests: ./test/cpp-test
 Run program: ./app/shell-app
