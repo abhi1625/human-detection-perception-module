@@ -35,7 +35,7 @@
 #include "IOModule.hpp"
 #include "ImageProcessing.hpp"
 #include "ImageInference.hpp"
-
+#include "FrameTransform.hpp"
 class PerceptionModule {
 
 public:
@@ -47,12 +47,13 @@ public:
     /**
      * @brief runDetection is the wrapper function to run the object detection
      *        pipeline.
-     * @param interface - an object of input-output module to read input and
-     *                    write the output.
-     * @param test - bool to check if the function is being called in test
+     * @param testVideo - bool to check if the function is being called in test with
+     *                      video as input.
+     * @param testImage - bool to check if the function is being called in test with
+     *                      image as input.
      * @return 0 if function runs successfully and -1 otherwise.
      */ 
-    int runDetection(IOModule interface, bool test);
+    int runDetection(bool testVideo, bool testImage);
 
     /**
      * @brief default destructor
@@ -62,14 +63,14 @@ public:
 private:
 
     /**
-     * @brief data structure to store image frames
+     * @brief data structure to store image frames from video buffer.
      */
     cv::Mat frame;
 
     /**
      * @brief object for video and camera-feed input
      */
-    cv::VideoCapture cap;
+    cv::VideoCapture capture;
 
     /**
      * @brief vector to store bounding box coordinates, dimensions and

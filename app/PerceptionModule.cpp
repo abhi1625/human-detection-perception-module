@@ -37,19 +37,27 @@ PerceptionModule::PerceptionModule() {
 
 }
 
-int PerceptionModule::runDetection(bool test) {
+int PerceptionModule::runDetection(bool testVideo, bool testImage) {
     // Gather all the modules
     ImageInference inferModule;
     ImageProcessing imageProcessModule;
     IOModule ioModule;
     FrameTransform frameTransModule;
     // Read User inputs
-    if (test) {
+    if (testImage) {
         std::istringstream inputType("4");
         ioModule.readInputType(inputType);
-    } else {
+    }
+
+    if (testVideo) {
+        std::istringstream inputType("5");
+        ioModule.readInputType(inputType);
+    }
+
+    if (!testVideo && !testImage) {
         ioModule.readInputType(cin);
     }
+    
     if (ioModule.returnInputType() < 4) {
         if (ioModule.returnInputType() == 3) {
             std::istringstream inputDir("../data/");
@@ -91,7 +99,7 @@ int PerceptionModule::runDetection(bool test) {
                     ioModule.drawBoundingBoxes(image, bBox.x, bBox.y, 
                                                 bBox.x + bBox.width, bBox.y + bBox.height);
                 }
-                if (!test) {
+                if (!testImage) {
                     cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
                     cv::imshow("AcmeViz", image);
                     cv::waitKey(0);
@@ -142,7 +150,7 @@ int PerceptionModule::runDetection(bool test) {
                     ioModule.drawBoundingBoxes(image, bBox.x, bBox.y, 
                                                 bBox.x + bBox.width, bBox.y + bBox.height);
                 }
-                if (!test) {
+                if (!testImage) {
                     cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
                     cv::imshow("AcmeViz", image);
                     cv::waitKey(0);
@@ -169,7 +177,12 @@ int PerceptionModule::runDetection(bool test) {
     if (ioModule.returnInputType() == 3) {
         capture = cv::VideoCapture(ioModule.returnCameraID());
     }
-    
+
+    if (ioModule.returnInputType() == 5) {
+        ioModule.setDefaultVidInput();
+        capture = cv::VideoCapture(ioModule.returnInputDir());
+    }
+
     if (!capture.isOpened()) {
         std::cout << "Error opening video stream or file!" << std::endl;
         return -1;
@@ -198,7 +211,7 @@ int PerceptionModule::runDetection(bool test) {
                 ioModule.drawBoundingBoxes(tempImage, bBox.x, bBox.y, 
                                             bBox.x + bBox.width, bBox.y + bBox.height);
             }
-            if (!test) {
+            if (!testVideo) {
                 cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
                 cv::imshow("AcmeViz", tempImage);
                 char c = static_cast<char>(cv::waitKey(5));
