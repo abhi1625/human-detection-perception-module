@@ -1,0 +1,9 @@
+data/testImage.jpg filter=lfs diff=lfs merge=lfs -text
+data/yolov3.cfg filter=lfs diff=lfs merge=lfs -text
+data/demoImages filter=lfs diff=lfs merge=lfs -text
+data/demoVideo filter=lfs diff=lfs merge=lfs -text
+data/testImage1.jpg filter=lfs diff=lfs merge=lfs -text
+data/yolov3.weights filter=lfs diff=lfs merge=lfs -text
+data/coco.names filter=lfs diff=lfs merge=lfs -text
+data/output filter=lfs diff=lfs merge=lfs -text
+data/testImage2.jpg filter=lfs diff=lfs merge=lfs -text
