@@ -1,6 +1,8 @@
 #include <iostream>
-#include <lib.hpp>
+#include "../include/PerceptionModule.hpp"
 
 int main()
 {
+    PerceptionModule detect;
+    detect.runDetection(false, false);
 }

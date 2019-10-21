@@ -39,7 +39,18 @@
  *       Tests the if the output of the method on successful 
  *       execution as expected. 
  */
+
 TEST(checkPerceptionRun, testDetectPipeline) {
     PerceptionModule detect;
-    ASSERT_EQ(detect.runDetection(true), 0);
+    ASSERT_EQ(detect.runDetection(false, true), 0);
+}
+
+/**
+ *@brief Test for runDetection method. 
+ *       Tests the if the output of the method on successful 
+ *       execution as expected. 
+ */
+TEST(checkPerceptionRunVid, testDetectPipelineVid) {
+    PerceptionModule detect;
+    ASSERT_EQ(detect.runDetection(true, false), 0);
 }
