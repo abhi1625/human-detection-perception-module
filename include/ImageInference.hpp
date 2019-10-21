@@ -74,5 +74,12 @@ public:
      */
     ~ImageInference();
 
+private:
+     float confidenceThresh;   // threshold to identify a network output as a detection 
+     float nmsThresh;          // threshold for confidence score to suppress weak detections 
+     int imageSize;            // dimension of a square image
+     string modelConfigFile;   // path to a trained model configuration file
+     string modelWeightFile;   // path to a trained model weights file
+     cv::dnn::Net network;     // openCV object of the Yolo CNN model
 };
 
