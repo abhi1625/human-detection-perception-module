@@ -71,16 +71,55 @@ public:
     void applyNMS(Mat& inferIMage, const vector<Mat>& finalLayer);
 
     /**
+     * @brief feedOutputNames returns the names of all the classes for which YoloV3
+     *        is trained.
+     * @param net - const reference to an openCV object of the Yolo CNN model
+     * @return vector containing names of all classes in the output layer of Yolo
+     */ 
+    vector<cv::String> feedOutputNames(const cv::dnn::Net& net);
+
+    /**
+     * @brief getLabels provides access to the private member labels
+     * @param None
+     * @return vector of labels given by YoloV3
+     */ 
+    vector<int> getLabels();
+
+    /**
+     * @brief getLabelConfidence provides access to the private member
+     *        labelConfidences
+     * @param None
+     * @return vector of confidence scores for each corresponding label
+     */ 
+    vector<float> getLabelConfidence();
+
+    /**
+     * @brief getLabelConfidence provides access to the private member
+     *        boxCords
+     * @param None
+     * @return vector containing information of bounding boxes detected
+     */ 
+    vector<cv::Rect> getBoxes();
+
+    /**
      * @brief default destructor
      */
     ~ImageInference();
 
 private:
-     float confidenceThresh;   // threshold to identify a network output as a detection 
-     float nmsThresh;          // threshold for confidence score to suppress weak detections 
-     int imageSize;            // dimension of a square image
-     string modelConfigFile;   // path to a trained model configuration file
-     string modelWeightFile;   // path to a trained model weights file
-     cv::dnn::Net network;     // openCV object of the Yolo CNN model
+    float confidenceThresh;             // threshold to identify a network  
+                                        // output as a detection
+ 
+    float nmsThresh;                    // threshold for confidence score to 
+                                        // suppress weak detections
+ 
+    int imageSize;                      // dimension of a square image
+    string modelConfigFile;             // path to a trained model configuration file
+    string modelWeightFile;             // path to a trained model weights file
+    cv::dnn::Net network;               // openCV object of the Yolo CNN model
+    vector<string> classes;             // vector of classes for which Yolo is trained
+    vector<int> labels;                 // vector of labels given by YoloV3
+    vector<float> labelConfidences;     // output vector of confidence scores of each label
+    vector<cv::Rect> boxCords;          // vector of bounding box information for each detection
 };
 
