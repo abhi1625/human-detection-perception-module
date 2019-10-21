@@ -1,0 +1,11 @@
+<map id="cpp.ast.AstBuilder.handle_struct" name="cpp.ast.AstBuilder.handle_struct">
+<area shape="rect" id="node2" href="$classcpp_1_1ast_1_1_ast_builder.html#a264b4e18c07863c4dae117fe623a0fb2" title="cpp.ast.AstBuilder.\l_AddBackToken" alt="" coords="252,5,385,47"/>
+<area shape="rect" id="node3" href="$classcpp_1_1ast_1_1_ast_builder.html#aa148966c6578f4560a4164db33df0fcf" title="cpp.ast.AstBuilder.\l_AddBackTokens" alt="" coords="252,71,385,112"/>
+<area shape="rect" id="node4" href="$classcpp_1_1ast_1_1_ast_builder.html#aed483f6f87068092d41c7b612553b330" title="cpp.ast.AstBuilder.\l_CreateVariable" alt="" coords="252,136,385,177"/>
+<area shape="rect" id="node5" href="$classcpp_1_1ast_1_1_ast_builder.html#af5670e1181b5af00bce0acc0dd9d0da7" title="cpp.ast.AstBuilder.\l_GetClass" alt="" coords="252,201,385,243"/>
+<area shape="rect" id="node6" href="$classcpp_1_1ast_1_1_ast_builder.html#ad1d43eb0d4bdc6be1a9d7ff86c54bd66" title="cpp.ast.AstBuilder.\l_GetMethod" alt="" coords="252,267,385,308"/>
+<area shape="rect" id="node7" href="$classcpp_1_1ast_1_1_ast_builder.html#ac22b5683a8f1a86a49751d6d0bcd4b84" title="cpp.ast.AstBuilder.\l_GetNextToken" alt="" coords="461,321,595,363"/>
+<area shape="rect" id="node8" href="$classcpp_1_1ast_1_1_ast_builder_a327957c4228325fc5f64821b047bdc6f.html#a327957c4228325fc5f64821b047bdc6f" title="cpp.ast.AstBuilder.GetName" alt="" coords="224,390,413,417"/>
+<area shape="rect" id="node9" href="$classcpp_1_1ast_1_1_ast_builder.html#a30936331903fe395451f8ed8ea2c26ba" title="cpp.ast.AstBuilder.\l_GetMatchingChar" alt="" coords="461,387,595,428"/>
+<area shape="rect" id="node10" href="$namespacecpp_1_1ast_a39ad8261fef5e0a7c1c17c510541b66f.html#a39ad8261fef5e0a7c1c17c510541b66f" title="cpp.ast.next" alt="" coords="481,453,575,479"/>
+</map>

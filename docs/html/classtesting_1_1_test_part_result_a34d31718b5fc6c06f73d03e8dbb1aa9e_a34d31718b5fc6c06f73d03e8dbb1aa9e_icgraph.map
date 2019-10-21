@@ -1,0 +1,6 @@
+<map id="testing::TestPartResult::fatally_failed" name="testing::TestPartResult::fatally_failed">
+<area shape="rect" id="node2" href="$classtesting_1_1_test_result_abb5d051bf958071c14020132a4d6cc07.html#abb5d051bf958071c14020132a4d6cc07" title="testing::TestResult\l::Failed" alt="" coords="233,13,367,54"/>
+<area shape="rect" id="node4" href="$gtest__unittest_8cc_a5f23eac320bc1c1dcd3cec464e31b5c6.html#a5f23eac320bc1c1dcd3cec464e31b5c6" title="operator\&lt;\&lt;" alt="" coords="257,79,343,105"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1_has_new_fatal_failure_helper_a2d2e1faa1f3669b82810df97ac678a27.html#a2d2e1faa1f3669b82810df97ac678a27" title="testing::internal::\lHasNewFatalFailureHelper\l::ReportTestPartResult" alt="" coords="211,129,389,185"/>
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer_a06749ff2b32a16c127374ecd015f13e0.html#a06749ff2b32a16c127374ecd015f13e0" title="testing::internal::\lPrettyUnitTestResultPrinter\l::OnTestEnd" alt="" coords="437,5,620,61"/>
+</map>

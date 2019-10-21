@@ -1,0 +1,8 @@
+<map id="FrameTransform::outputCoords" name="FrameTransform::outputCoords">
+<area shape="rect" id="node2" href="$class_frame_transform_ac8b87b0e048c8ac8a858cdaf97ab9b39.html#ac8b87b0e048c8ac8a858cdaf97ab9b39" title="provides access to private member coordsCam " alt="" coords="257,5,472,32"/>
+<area shape="rect" id="node4" href="$class_perception_module_aba601091f507b9e5ba28460f422c635e.html#aba601091f507b9e5ba28460f422c635e" title="runDetection is the wrapper function to run the object detection pipeline. " alt="" coords="261,56,469,83"/>
+<area shape="rect" id="node7" href="$_frame_transform_test_8cpp_a1811fc33d73f54f57cf3c51c64808ad1.html#a1811fc33d73f54f57cf3c51c64808ad1" title="Test for outputCoords method. " alt="" coords="337,107,393,133"/>
+<area shape="rect" id="node3" href="$_frame_transform_test_8cpp_ae8f0e11a9a57e271954035281f447d12.html#ae8f0e11a9a57e271954035281f447d12" title="Test for image to camera frame transformation method. " alt="" coords="520,5,576,32"/>
+<area shape="rect" id="node5" href="$app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="523,56,573,83"/>
+<area shape="rect" id="node6" href="$_perception_module_test_8cpp_a56d806934ed47f2cd5ed5a899341c081.html#a56d806934ed47f2cd5ed5a899341c081" title="Test for runDetection method. " alt="" coords="520,107,576,133"/>
+</map>

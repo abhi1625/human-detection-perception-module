@@ -7,3 +7,4 @@ data/yolov3.weights filter=lfs diff=lfs merge=lfs -text
 data/coco.names filter=lfs diff=lfs merge=lfs -text
 data/output filter=lfs diff=lfs merge=lfs -text
 data/testImage2.jpg filter=lfs diff=lfs merge=lfs -text
+docs/html filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,6 @@
+<map id="common.GetSvnInfo" name="common.GetSvnInfo">
+<area shape="rect" id="node2" href="$classrelease__docs_1_1_wiki_brancher_a344b32e2b65f0e8bab9fbf1e670d33fd.html#a344b32e2b65f0e8bab9fbf1e670d33fd" title="release_docs.WikiBrancher.\l__init__" alt="" coords="196,5,381,47"/>
+<area shape="rect" id="node3" href="$namespacecommon_a9e6483972a8dc0a6a274cbcee69564b0.html#a9e6483972a8dc0a6a274cbcee69564b0" title="common.GetSvnTrunk" alt="" coords="212,71,365,98"/>
+<area shape="rect" id="node4" href="$namespacecommon_a8219bb529336fc3f0ef8222a5ed48222.html#a8219bb529336fc3f0ef8222a5ed48222" title="common.IsInGMockSvn" alt="" coords="207,122,370,149"/>
+<area shape="rect" id="node5" href="$namespacecommon_af29dcab2d7b4a9dd846446a0987ab387.html#af29dcab2d7b4a9dd846446a0987ab387" title="common.IsInGTestSvn" alt="" coords="210,173,367,199"/>
+</map>

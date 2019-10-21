@@ -1,0 +1,10 @@
+<map id="testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd" name="testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd">
+<area shape="rect" id="node2" href="$namespacetesting_1_1internal_1_1posix_a4042201dcc4932641d484e7ddf94de7d.html#a4042201dcc4932641d484e7ddf94de7d" title="testing::internal::\lposix::FOpen" alt="" coords="257,5,376,47"/>
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_string_af702dc7cbd569589d8e3ff215a7cafa9.html#af702dc7cbd569589d8e3ff215a7cafa9" title="testing::internal::\lString::FormatByte" alt="" coords="251,71,383,112"/>
+<area shape="rect" id="node4" href="$classtesting_1_1_message_abe8c1b7584aa670dd0e2413e8317a937.html#abe8c1b7584aa670dd0e2413e8317a937" title="testing::Message::GetString" alt="" coords="224,137,409,163"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_ac0a2b7f69fc829d80a39e925b6417e39.html#ac0a2b7f69fc829d80a39e925b6417e39" title="testing::internal::\lStringStreamToString" alt="" coords="457,176,604,217"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_file_path_aed3abcd0b8a7f6ed1ff0e7743ef8bf1e.html#aed3abcd0b8a7f6ed1ff0e7743ef8bf1e" title="testing::internal::\lFilePath::RemoveFileName" alt="" coords="225,241,408,283"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1scoped__ptr_adc8f8fcb63ce69f80f011456e6d2f08d.html#adc8f8fcb63ce69f80f011456e6d2f08d" title="testing::internal::\lscoped_ptr::get" alt="" coords="471,111,590,152"/>
+<area shape="rect" id="node8" href="$classtesting_1_1internal_1_1_file_path_a85297234dac0acd936632dff8634c2b9.html#a85297234dac0acd936632dff8634c2b9" title="testing::internal::\lFilePath::c_str" alt="" coords="471,241,590,283"/>
+<area shape="rect" id="node9" href="$classtesting_1_1internal_1_1_file_path_a3504a51accbca78a52fe586133ea5499.html#a3504a51accbca78a52fe586133ea5499" title="testing::internal::\lFilePath::FilePath" alt="" coords="467,307,594,348"/>
+</map>

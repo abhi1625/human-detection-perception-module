@@ -1,0 +1,10 @@
+<map id="testing::InitGoogleTest" name="testing::InitGoogleTest">
+<area shape="rect" id="node2" href="$namespacetesting_a460d7b998622e332392c1e00be3a60d5.html#a460d7b998622e332392c1e00be3a60d5" title="testing::AddGlobalTestEnvironment" alt="" coords="208,5,436,32"/>
+<area shape="rect" id="node4" href="$namespacetesting_1_1internal_a3823844199df88af9493026031cf7744.html#a3823844199df88af9493026031cf7744" title="testing::internal::\lInitGoogleMockImpl" alt="" coords="253,57,391,98"/>
+<area shape="rect" id="node9" href="$test_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="297,123,347,149"/>
+<area shape="rect" id="node3" href="$gtest-listener__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="539,5,589,32"/>
+<area shape="rect" id="node5" href="$namespacetesting_a32b1c6db9ba5133ccabfa67616b3c041.html#a32b1c6db9ba5133ccabfa67616b3c041" title="testing::InitGoogleMock" alt="" coords="484,64,644,91"/>
+<area shape="rect" id="node6" href="$gmock__main_8cc_a7f83bdc516d2cb86e20235d94ddf055a.html#a7f83bdc516d2cb86e20235d94ddf055a" title="main" alt="" coords="736,39,787,65"/>
+<area shape="rect" id="node7" href="$gmock__test_8cc_ac9c8ae8722c330d47f75dee43fb8ab78.html#ac9c8ae8722c330d47f75dee43fb8ab78" title="TestInitGoogleMock" alt="" coords="692,89,831,116"/>
+<area shape="rect" id="node8" href="$gmock__test_8cc_a7c86c6c98b72e903135c1b01370a13f3.html#a7c86c6c98b72e903135c1b01370a13f3" title="TEST" alt="" coords="879,89,935,116"/>
+</map>

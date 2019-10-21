@@ -1,0 +1,45 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classtesting_1_1_test.html" title="testing::Test" alt="" coords="5,1041,100,1068"/>
+<area shape="rect" id="node2" href="$classbar_1_1_mixed_up_test_case_test.html" title="bar::MixedUpTestCaseTest" alt="" coords="174,5,357,32"/>
+<area shape="rect" id="node3" href="$classbar_1_1_mixed_up_test_case_with_same_test_name_test.html" title="bar::MixedUpTestCaseWith\lSameTestNameTest" alt="" coords="173,57,357,98"/>
+<area shape="rect" id="node4" href="$class_common_test.html" title="CommonTest\&lt; T \&gt;" alt="" coords="199,123,332,149"/>
+<area shape="rect" id="node5" href="$class_expect_failure_test.html" title="ExpectFailureTest" alt="" coords="201,173,329,200"/>
+<area shape="rect" id="node6" href="$class_fatal_failure_in_fixture_constructor_test.html" title="FatalFailureInFixtureConstructorTest" alt="" coords="148,224,383,251"/>
+<area shape="rect" id="node7" href="$class_fatal_failure_in_set_up_test.html" title="FatalFailureInSetUpTest" alt="" coords="183,275,347,301"/>
+<area shape="rect" id="node8" href="$classfoo_1_1_mixed_up_test_case_test.html" title="foo::MixedUpTestCaseTest" alt="" coords="174,325,357,352"/>
+<area shape="rect" id="node9" href="$classfoo_1_1_mixed_up_test_case_with_same_test_name_test.html" title="foo::MixedUpTestCaseWith\lSameTestNameTest" alt="" coords="173,377,357,418"/>
+<area shape="rect" id="node10" href="$class_foo_test.html" title="FooTest" alt="" coords="230,443,301,469"/>
+<area shape="rect" id="node11" href="$class_g_mock_output_test.html" title="GMockOutputTest" alt="" coords="201,493,330,520"/>
+<area shape="rect" id="node12" href="$class_non_fatal_failure_in_fixture_constructor_test.html" title="NonFatalFailureInFixture\lConstructorTest" alt="" coords="183,545,348,586"/>
+<area shape="rect" id="node13" href="$class_non_fatal_failure_in_set_up_test.html" title="NonFatalFailureInSetUpTest" alt="" coords="171,611,359,637"/>
+<area shape="rect" id="node14" href="$class_predicate1_test.html" title="Predicate1Test" alt="" coords="210,661,321,688"/>
+<area shape="rect" id="node15" href="$class_predicate2_test.html" title="Predicate2Test" alt="" coords="210,712,321,739"/>
+<area shape="rect" id="node16" href="$class_predicate3_test.html" title="Predicate3Test" alt="" coords="210,763,321,789"/>
+<area shape="rect" id="node17" href="$class_predicate4_test.html" title="Predicate4Test" alt="" coords="210,813,321,840"/>
+<area shape="rect" id="node18" href="$class_predicate5_test.html" title="Predicate5Test" alt="" coords="210,864,321,891"/>
+<area shape="rect" id="node19" href="$class_prime_table_test.html" title="PrimeTableTest\&lt; T \&gt;" alt="" coords="192,915,339,941"/>
+<area shape="rect" id="node20" href="$class_property_one.html" title="PropertyOne" alt="" coords="218,965,313,992"/>
+<area shape="rect" id="node21" href="$class_property_two.html" title="PropertyTwo" alt="" coords="217,1016,313,1043"/>
+<area shape="rect" id="node22" href="$class_protected_fixture_methods_test.html" title="ProtectedFixtureMethodsTest" alt="" coords="168,1067,363,1093"/>
+<area shape="rect" id="node23" href="$class_queue_test.html" title="QueueTest" alt="" coords="482,1117,569,1144"/>
+<area shape="rect" id="node24" href="$class_quick_test.html" title="QuickTest" alt="" coords="224,1168,307,1195"/>
+<area shape="rect" id="node26" href="$class_t_e_s_t__before___t_e_s_t___f__in__same__test__case.html" title="TEST_before_TEST_F\l_in_same_test_case" alt="" coords="188,1219,343,1261"/>
+<area shape="rect" id="node27" href="$class_t_e_s_t___f__before___t_e_s_t__in__same__test__case.html" title="TEST_F_before_TEST\l_in_same_test_case" alt="" coords="188,1285,343,1326"/>
+<area shape="rect" id="node28" href="$classtesting_1_1_code_location_for_t_e_s_t_f.html" title="testing::CodeLocationFor\lTESTF" alt="" coords="181,1350,349,1391"/>
+<area shape="rect" id="node29" href="$classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t.html" title="testing::CodeLocationFor\lTYPEDTEST\&lt; T \&gt;" alt="" coords="181,1415,349,1457"/>
+<area shape="rect" id="node30" href="$classtesting_1_1_code_location_for_t_y_p_e_d_t_e_s_t_p.html" title="testing::CodeLocationFor\lTYPEDTESTP\&lt; T \&gt;" alt="" coords="181,1481,349,1522"/>
+<area shape="rect" id="node31" href="$classtesting_1_1_current_test_info_test.html" title="testing::CurrentTestInfoTest" alt="" coords="172,1547,359,1573"/>
+<area shape="rect" id="node32" href="$classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test.html" title="testing::gmock_generated\l_function_mockers_test\l::FunctionMockerTest" alt="" coords="179,1597,351,1653"/>
+<area shape="rect" id="node33" href="$classtesting_1_1gmock__matchers__test_1_1_backtracking_b_p_m_test.html" title="testing::gmock_matchers\l_test::BacktrackingBPMTest" alt="" coords="170,1677,361,1718"/>
+<area shape="rect" id="node34" href="$classtesting_1_1gmock__matchers__test_1_1_floating_point_test.html" title="testing::gmock_matchers\l_test::FloatingPointTest\l\&lt; RawType \&gt;" alt="" coords="181,1741,350,1797"/>
+<area shape="rect" id="node36" href="$classtesting_1_1gmock__matchers__test_1_1_unordered_elements_are_test.html" title="testing::gmock_matchers\l_test::UnorderedElementsAreTest" alt="" coords="155,1821,375,1862"/>
+<area shape="rect" id="node37" href="$classtesting_1_1_init_google_test_test.html" title="testing::InitGoogleTestTest" alt="" coords="175,1887,355,1913"/>
+<area shape="rect" id="node38" href="$classtesting_1_1internal_1_1_listener_test.html" title="testing::internal::\lListenerTest" alt="" coords="206,1938,325,1979"/>
+<area shape="rect" id="node39" href="$classtesting_1_1internal_1_1_unit_test_record_property_test_helper.html" title="testing::internal::\lUnitTestRecordPropertyTest\lHelper" alt="" coords="171,2003,360,2059"/>
+<area shape="rect" id="node40" href="$classtesting_1_1_set_up_test_case_test.html" title="testing::SetUpTestCaseTest" alt="" coords="171,2083,360,2109"/>
+<area shape="rect" id="node41" href="$classtesting_1_1_test_info_test.html" title="testing::TestInfoTest" alt="" coords="194,2133,337,2160"/>
+<area shape="rect" id="node42" href="$class_typed_test.html" title="TypedTest\&lt; T \&gt;" alt="" coords="207,2184,323,2211"/>
+<area shape="rect" id="node43" href="$class_type_param_test.html" title="TypeParamTest\&lt; T \&gt;" alt="" coords="192,2235,339,2261"/>
+<area shape="rect" id="node25" href="$class_integer_function_test.html" title="IntegerFunctionTest" alt="" coords="456,1168,595,1195"/>
+<area shape="rect" id="node35" href="$classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test.html" title="testing::gmock_matchers\l_test::FloatingPointNearTest\l\&lt; RawType \&gt;" alt="" coords="431,1741,620,1797"/>
+</map>

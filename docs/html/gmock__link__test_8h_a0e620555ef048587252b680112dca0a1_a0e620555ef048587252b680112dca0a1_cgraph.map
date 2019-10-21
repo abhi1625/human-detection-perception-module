@@ -1,0 +1,9 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$namespacetesting_aec11c4e418a835ca2c0c3cbdb29b28ba.html#aec11c4e418a835ca2c0c3cbdb29b28ba" title="testing::EndsWith" alt="" coords="131,5,258,32"/>
+<area shape="rect" id="node4" href="$namespacetesting_a7d27682e38d57eea81ba145a2772e1c7.html#a7d27682e38d57eea81ba145a2772e1c7" title="testing::HasSubstr" alt="" coords="129,56,260,83"/>
+<area shape="rect" id="node5" href="$namespacetesting_af6d1c13e9376c77671e37545cd84359c.html#af6d1c13e9376c77671e37545cd84359c" title="testing::Return" alt="" coords="141,157,249,184"/>
+<area shape="rect" id="node7" href="$namespacetesting_ae0502232432b1fe8361d296c6de6beda.html#ae0502232432b1fe8361d296c6de6beda" title="testing::StartsWith" alt="" coords="129,107,260,133"/>
+<area shape="rect" id="node8" href="$class_interface_a65d6ae604e7e9a513aec72c9c94e0b97.html#a65d6ae604e7e9a513aec72c9c94e0b97" title="Interface::VoidFromString" alt="" coords="109,208,280,235"/>
+<area shape="rect" id="node3" href="$namespacetesting_a667ca94f190ec2e17ee2fbfdb7d3da04.html#a667ca94f190ec2e17ee2fbfdb7d3da04" title="testing::MakePolymorphic\lMatcher" alt="" coords="328,49,501,90"/>
+<area shape="rect" id="node6" href="$namespacetesting_1_1internal_a0f6d06bf8c3093b9c22bb08723db201e.html#a0f6d06bf8c3093b9c22bb08723db201e" title="testing::internal::move" alt="" coords="339,157,490,184"/>
+</map>

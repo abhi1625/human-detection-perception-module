@@ -1,0 +1,9 @@
+<map id="gtest_output_test.GetOutputOfAllCommands" name="gtest_output_test.GetOutputOfAllCommands">
+<area shape="rect" id="node2" href="$namespacegtest__output__test_a953ec555d073485fbc7d9a092e8f1dea.html#a953ec555d073485fbc7d9a092e8f1dea" title="gtest_output_test.GetCommand\lOutput" alt="" coords="240,68,448,109"/>
+<area shape="rect" id="node3" href="$namespacegtest__output__test_a0dbdd37611259249a58ab13ed60d8172.html#a0dbdd37611259249a58ab13ed60d8172" title="gtest_output_test.GetShell\lCommandOutput" alt="" coords="501,35,678,76"/>
+<area shape="rect" id="node4" href="$namespacegtest__output__test_a457700303177f330388e249a23b0c63a.html#a457700303177f330388e249a23b0c63a" title="gtest_output_test.Normalize\lOutput" alt="" coords="496,100,683,141"/>
+<area shape="rect" id="node5" href="$namespacegtest__output__test_ad5ff97e572c5ef7aaf1a414eb52282cf.html#ad5ff97e572c5ef7aaf1a414eb52282cf" title="gtest_output_test.Remove\lLocations" alt="" coords="745,5,921,47"/>
+<area shape="rect" id="node6" href="$namespacegtest__output__test_a15bbf618beea12685dc5c9630ec18120.html#a15bbf618beea12685dc5c9630ec18120" title="gtest_output_test.Remove\lStackTraceDetails" alt="" coords="745,71,921,112"/>
+<area shape="rect" id="node7" href="$namespacegtest__output__test_a2f40fbdd1c9f47da27109abb3fd2d80d.html#a2f40fbdd1c9f47da27109abb3fd2d80d" title="gtest_output_test.RemoveTime" alt="" coords="731,137,936,163"/>
+<area shape="rect" id="node8" href="$namespacegtest__output__test_aa9ee981e855b986a7fc513a4ab68dd3e.html#aa9ee981e855b986a7fc513a4ab68dd3e" title="gtest_output_test.ToUnix\lLineEnding" alt="" coords="749,188,918,229"/>
+</map>

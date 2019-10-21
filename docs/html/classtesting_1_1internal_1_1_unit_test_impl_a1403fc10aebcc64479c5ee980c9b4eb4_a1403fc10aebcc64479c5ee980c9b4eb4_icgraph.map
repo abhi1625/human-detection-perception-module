@@ -1,0 +1,6 @@
+<map id="testing::internal::UnitTestImpl::SetTestPartResultReporterForCurrentThread" name="testing::internal::UnitTestImpl::SetTestPartResultReporterForCurrentThread">
+<area shape="rect" id="node2" href="$classtesting_1_1internal_1_1_has_new_fatal_failure_helper_a59190a7188db558c00b4c6bf9251859a.html#a59190a7188db558c00b4c6bf9251859a" title="testing::internal::\lHasNewFatalFailureHelper\l::HasNewFatalFailureHelper" alt="" coords="294,5,481,61"/>
+<area shape="rect" id="node3" href="$classtesting_1_1_scoped_fake_test_part_result_reporter_a57cbc09ed48627c8a73e622618dc4b4f.html#a57cbc09ed48627c8a73e622618dc4b4f" title="testing::ScopedFakeTestPart\lResultReporter::ScopedFakeTestPart\lResultReporter" alt="" coords="267,85,508,141"/>
+<area shape="rect" id="node4" href="$classtesting_1_1internal_1_1_has_new_fatal_failure_helper_a913b1bc7c372868c9b2dbb009044ee97.html#a913b1bc7c372868c9b2dbb009044ee97" title="testing::internal::\lHasNewFatalFailureHelper\l::~HasNewFatalFailureHelper" alt="" coords="290,165,485,221"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_scoped_fake_test_part_result_reporter_a4817d59ca70228ebd5d5c3c4e8dd729d.html#a4817d59ca70228ebd5d5c3c4e8dd729d" title="testing::ScopedFakeTestPart\lResultReporter::~ScopedFakeTest\lPartResultReporter" alt="" coords="275,245,500,301"/>
+</map>

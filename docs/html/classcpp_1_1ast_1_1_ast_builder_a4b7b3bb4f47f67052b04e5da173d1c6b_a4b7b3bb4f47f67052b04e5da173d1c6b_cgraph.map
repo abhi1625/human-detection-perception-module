@@ -1,0 +1,6 @@
+<map id="cpp.ast.AstBuilder.handle_typename" name="cpp.ast.AstBuilder.handle_typename">
+<area shape="rect" id="node2" href="$classcpp_1_1ast_1_1_ast_builder.html#a30936331903fe395451f8ed8ea2c26ba" title="cpp.ast.AstBuilder.\l_GetMatchingChar" alt="" coords="461,5,595,47"/>
+<area shape="rect" id="node3" href="$classcpp_1_1ast_1_1_ast_builder_a327957c4228325fc5f64821b047bdc6f.html#a327957c4228325fc5f64821b047bdc6f" title="cpp.ast.AstBuilder.GetName" alt="" coords="224,74,413,101"/>
+<area shape="rect" id="node4" href="$classcpp_1_1ast_1_1_ast_builder.html#ac22b5683a8f1a86a49751d6d0bcd4b84" title="cpp.ast.AstBuilder.\l_GetNextToken" alt="" coords="461,71,595,112"/>
+<area shape="rect" id="node5" href="$namespacecpp_1_1ast_a39ad8261fef5e0a7c1c17c510541b66f.html#a39ad8261fef5e0a7c1c17c510541b66f" title="cpp.ast.next" alt="" coords="481,137,575,163"/>
+</map>

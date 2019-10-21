@@ -1,0 +1,10 @@
+<map id="testing::operator&lt;&lt;" name="testing::operator&lt;&lt;">
+<area shape="rect" id="node2" href="$classtesting_1_1_test_part_result_a34d31718b5fc6c06f73d03e8dbb1aa9e.html#a34d31718b5fc6c06f73d03e8dbb1aa9e" title="testing::TestPartResult\l::fatally_failed" alt="" coords="203,85,361,126"/>
+<area shape="rect" id="node7" href="$classtesting_1_1_message_a9de694ca239486809fc99fbbea8ac21d.html#a9de694ca239486809fc99fbbea8ac21d" title="testing::Message::Message" alt="" coords="191,151,373,177"/>
+<area shape="rect" id="node8" href="$classtesting_1_1_message_a3e1e04f23b1bdfe18adfd59928296346.html#a3e1e04f23b1bdfe18adfd59928296346" title="testing::Message::operator\&lt;\&lt;" alt="" coords="185,201,379,228"/>
+<area shape="rect" id="node9" href="$gtest__unittest_8cc_a3cfb4c4e94683c4677706c53ab52fb8e.html#a3cfb4c4e94683c4677706c53ab52fb8e" title="TEST" alt="" coords="254,252,310,279"/>
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_has_new_fatal_failure_helper_a2d2e1faa1f3669b82810df97ac678a27.html#a2d2e1faa1f3669b82810df97ac678a27" title="testing::internal::\lHasNewFatalFailureHelper\l::ReportTestPartResult" alt="" coords="427,5,605,61"/>
+<area shape="rect" id="node4" href="$classtesting_1_1_test_result_abb5d051bf958071c14020132a4d6cc07.html#abb5d051bf958071c14020132a4d6cc07" title="testing::TestResult\l::Failed" alt="" coords="449,85,583,126"/>
+<area shape="rect" id="node6" href="$gtest__unittest_8cc_a5f23eac320bc1c1dcd3cec464e31b5c6.html#a5f23eac320bc1c1dcd3cec464e31b5c6" title="operator\&lt;\&lt;" alt="" coords="473,151,559,177"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer_a06749ff2b32a16c127374ecd015f13e0.html#a06749ff2b32a16c127374ecd015f13e0" title="testing::internal::\lPrettyUnitTestResultPrinter\l::OnTestEnd" alt="" coords="653,77,836,133"/>
+</map>

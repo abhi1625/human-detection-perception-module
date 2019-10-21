@@ -1,0 +1,4 @@
+<map id="upload.VersionControlSystem.IsImage" name="upload.VersionControlSystem.IsImage">
+<area shape="rect" id="node2" href="$classupload_1_1_subversion_v_c_s_a29dec4941de0824734d6842a2f33ffc3.html#a29dec4941de0824734d6842a2f33ffc3" title="upload.SubversionVCS.Get\lBaseFile" alt="" coords="271,29,454,71"/>
+<area shape="rect" id="node3" href="$classupload_1_1_mercurial_v_c_s_a0cdc0cbe6ac4daab82f5f01e6ae2e670.html#a0cdc0cbe6ac4daab82f5f01e6ae2e670" title="upload.MercurialVCS.GetBaseFile" alt="" coords="252,119,473,146"/>
+</map>

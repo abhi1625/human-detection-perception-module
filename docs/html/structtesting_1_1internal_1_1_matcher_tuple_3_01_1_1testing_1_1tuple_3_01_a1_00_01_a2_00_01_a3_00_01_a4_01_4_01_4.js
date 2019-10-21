@@ -1,0 +1,4 @@
+var structtesting_1_1internal_1_1_matcher_tuple_3_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_00_01_a3_00_01_a4_01_4_01_4 =
+[
+    [ "type", "structtesting_1_1internal_1_1_matcher_tuple_3_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_00_01_a3_00_01_a4_01_4_01_4_afa578cadfc6b4725920b115d4f7633df.html#afa578cadfc6b4725920b115d4f7633df", null ]
+];
