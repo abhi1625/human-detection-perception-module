@@ -30,6 +30,7 @@
  * @author     : Abhinav Modi
  * @created on : Oct 20, 2019
  */
+#pragma once
 
 #include "IOModule.hpp"
 

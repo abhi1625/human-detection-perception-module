@@ -31,6 +31,7 @@
  * @author     : Abhinav Modi
  * @created on : Oct 20, 2019
  */
+#pragma once
 
 #include "IOModule.hpp"
 
@@ -47,7 +48,7 @@ public:
      * @param imgPoints - const reference to matrix of detected coordinates
      * @return Matrix containing coordinates in robot's base frame
      */ 
-    cv::Mat endToBase(const Mat &imgPoints);
+    cv::Mat endToBase(const cv::Mat &imgPoints);
 
     /**
      * @brief baseToEnd converts coordinates of the detected objects from robot's
@@ -56,7 +57,7 @@ public:
      *                 coordinates in robot's base frame
      * @return Matrix containing coordinates in sensor frame
      */ 
-    cv::Mat baseToEnd(const Mat &coords);
+    cv::Mat baseToEnd(const cv::Mat &coords);
 
     /**
      * @brief default destructor
