@@ -36,6 +36,7 @@
 #include "ImageInference.hpp"
 
 class PerceptionModule {
+    
 public:
     /**
      * @brief default constructor
@@ -43,31 +44,36 @@ public:
     PerceptionModule();
 
     /**
-     * @brief resizeImage resizes input image to desired dimensions
-     * @param h - desired height of the image in pixels
-     * @param w - desired width of the image in pixels
-     * @param image - const reference to the image matrix to be resized
-     * @return resized image matrix in openCV format
+     * @brief runDetection is the wrapper function to run the object detection
+     *        pipeline.
+     * @param interface - an object of input-output module to read input and
+     *                    write the output.
+     * @param test - bool to check if the function is being called in test
+     * @return 0 if function runs successfully and -1 otherwise.
      */ 
-    Mat resizeImage(int h, int w, const Mat &image);
-
-    /**
-     * @brief medianBlur performs median blurring operation on an input image.
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat medianBlur(const Mat &image);
-
-    /**
-     * @brief gaussianBlur performs gaussian blur operation on an input image
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat gaussianBlur(const Mat &image);
+    int runDetection(IOModule interface, bool test);
 
     /**
      * @brief default destructor
-     */ 
-    ~ImageProcessing();
+     */
+    ~PerceptionModule();
+
+private:
+
+    /**
+     * @brief data structure to store image frames
+     */
+    cv::Mat frame;
+
+    /**
+     * @brief object for video and camera-feed input
+     */
+    cv::VideoCapture cap;
+
+    /**
+     * @brief vector to store bounding box coordinates, dimensions and
+     *        corresponding labels of detected objects
+     */
+    vector<vector<float>> detectedObjects;
 };
 
