@@ -37,6 +37,33 @@ cd build
 cmake ..
 make
 ```
+## Dependencies installation instructions
+```
+  git clone https://github.com/opencv/opencv.git
+  cd opencv
+  git checkout 3.4.2
+  cd ..
+
+  git clone https://github.com/opencv/opencv_contrib.git
+  cd opencv_contrib
+  git checkout 3.4.2
+  cd ..
+
+  cd opencv
+  mkdir build
+  cd build
+  cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+  make -j$(nproc)
+  sudo make install
+  sudo sh -c 'echo "/usr/local/lib" >> /etc/ld.so.conf.d/opencv.conf'
+  sudo ldconfig
+  cd ../../
+
+  pip install --user cpp-coveralls
+  sudo apt-get install libopencv-dev
+  sudo apt-get install libboost-all-dev
+
+```
 ## Running the module
 #### Running the demo
 Once you have successfully built the package, go to the build folder and run:
