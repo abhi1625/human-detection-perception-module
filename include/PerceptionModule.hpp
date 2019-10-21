@@ -30,13 +30,14 @@
  * @author     : Abhinav Modi
  * @created on : Oct 20, 2019
  */
+#pragma once
 
 #include "IOModule.hpp"
 #include "ImageProcessing.hpp"
 #include "ImageInference.hpp"
 
 class PerceptionModule {
-    
+
 public:
     /**
      * @brief default constructor

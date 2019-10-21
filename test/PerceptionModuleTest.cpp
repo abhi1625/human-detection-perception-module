@@ -22,51 +22,24 @@
  * SOFTWARE.
  *******************************************************************************/
 
-/**@file ImageProcessing.hpp
- * @brief Header file for image-processing module.
- *        Contains declarations for required headers and methods.
+/**@file PerceptionModuleTest.cpp
+ * @brief Test source file for perception module.
+ *        Contains the tests for the defined methods.
  *
  * Detailed description follows here.
  * @author     : Abhinav Modi
- * @created on : Oct 20, 2019
+ * @created on : Oct 21, 2019
  */
-#pragma once
 
-#include "IOModule.hpp"
+#include <gtest/gtest.h>
+#include "../include/PerceptionModule.hpp"
 
-class ImageProcessing {
-public:
-    /**
-     * @brief default constructor
-     */
-    ImageProcessing();
-
-    /**
-     * @brief resizeImage resizes input image to desired dimensions
-     * @param h - desired height of the image in pixels
-     * @param w - desired width of the image in pixels
-     * @param image - const reference to the image matrix to be resized
-     * @return resized image matrix in openCV format
-     */ 
-    Mat resizeImage(int h, int w, const Mat &image);
-
-    /**
-     * @brief medianBlur performs median blurring operation on an input image.
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat medianBlur(const Mat &image);
-
-    /**
-     * @brief gaussianBlur performs gaussian blur operation on an input image
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat gaussianBlur(const Mat &image);
-
-    /**
-     * @brief default destructor
-     */ 
-    ~ImageProcessing();
-};
-
+/**
+ *@brief Test for runDetection method. 
+ *       Tests the if the output of the method on successful 
+ *       execution as expected. 
+ */
+TEST(checkPerceptionRun, testDetectPipeline) {
+    PerceptionModule detect;
+    ASSERT_EQ(detect.runDetection(true), 0);
+}

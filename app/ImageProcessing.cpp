@@ -22,51 +22,39 @@
  * SOFTWARE.
  *******************************************************************************/
 
-/**@file ImageProcessing.hpp
- * @brief Header file for image-processing module.
+/**@file ImageProcessing.cpp
+ * @brief Source file for ImageProcessing to perform basic operations on images.
  *        Contains declarations for required headers and methods.
  *
  * Detailed description follows here.
  * @author     : Abhinav Modi
- * @created on : Oct 20, 2019
+ * @created on : Oct 21, 2019
  */
-#pragma once
 
-#include "IOModule.hpp"
+#include "../include/ImageProcessing.hpp"
 
-class ImageProcessing {
-public:
-    /**
-     * @brief default constructor
-     */
-    ImageProcessing();
+ImageProcessing::ImageProcessing() {
 
-    /**
-     * @brief resizeImage resizes input image to desired dimensions
-     * @param h - desired height of the image in pixels
-     * @param w - desired width of the image in pixels
-     * @param image - const reference to the image matrix to be resized
-     * @return resized image matrix in openCV format
-     */ 
-    Mat resizeImage(int h, int w, const Mat &image);
+}
 
-    /**
-     * @brief medianBlur performs median blurring operation on an input image.
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat medianBlur(const Mat &image);
+Mat ImageProcessing::resizeImage(int h, int w, const Mat &image) {
+    Mat _resizedImage;
+    cv::resize(image, _resizedImage, cv::Size(w, h), 0, 0, cv::INTER_LINEAR);
+    return _resizedImage;
+}
 
-    /**
-     * @brief gaussianBlur performs gaussian blur operation on an input image
-     * @param image - const reference to the image matrix to be blurred
-     * @return blurred image matrix in openCV format
-     */ 
-    Mat gaussianBlur(const Mat &image);
+Mat ImageProcessing::medianBlur(const Mat &image) {
+    Mat _blurredImage;
+    cv::medianBlur(image, _blurredImage, 3);
+    return _blurredImage;
+}
 
-    /**
-     * @brief default destructor
-     */ 
-    ~ImageProcessing();
-};
+Mat ImageProcessing::gaussianBlur(const Mat &image) {
+    Mat _blurredImage;
+    cv::GaussianBlur(image, _blurredImage, cv::Size(3, 3), 0, 0, cv::BORDER_DEFAULT);
+    return _blurredImage;
+}
 
+ImageProcessing::~ImageProcessing() {
+
+}
