@@ -17,6 +17,8 @@ In this project we have emphasized more on the preprocessing and the post proces
 ## Outputs
 The output of the network is shown below for a test image. An output on a surveillence video is also included in the repo(in test/testResults) and the detections clearly indicate that with some tweaks this module can be deployed for many tasks such as human tracking, counting humans, etc.
 
+![output](../data/output/outputImage1.png)
+![output](../data/output/outputImage2.png)
 
 ## Requirements
 
