@@ -33,10 +33,12 @@
  */
 #pragma once
 
+#include <string>
+#include <vector>
 #include "IOModule.hpp"
 
 class ImageInference {
-public:
+ public:
     /**
      * @brief default constructor
      */
@@ -68,7 +70,7 @@ public:
      *                      bounding boxes in the final layer of the network.
      * @return None
      */ 
-    void applyNMS(Mat& inferIMage, const vector<Mat>& finalLayer);
+    void applyNMS(const Mat& inferImage, const vector<Mat>& finalLayer);
 
     /**
      * @brief feedOutputNames returns the names of all the classes for which YoloV3
@@ -106,20 +108,53 @@ public:
      */
     ~ImageInference();
 
-private:
-    float confidenceThresh;             // threshold to identify a network  
-                                        // output as a detection
- 
-    float nmsThresh;                    // threshold for confidence score to 
-                                        // suppress weak detections
- 
+ private:
     int imageSize;                      // dimension of a square image
-    string modelConfigFile;             // path to a trained model configuration file
-    string modelWeightFile;             // path to a trained model weights file
-    cv::dnn::Net network;               // openCV object of the Yolo CNN model
-    vector<string> classes;             // vector of classes for which Yolo is trained
-    vector<int> labels;                 // vector of labels given by YoloV3
-    vector<float> labelConfidences;     // output vector of confidence scores of each label
-    vector<cv::Rect> boxCords;          // vector of bounding box information for each detection
+
+    /**
+     * @brief threshold to identify a network output as a detection
+     */
+    float confidenceThresh;
+
+    /**
+     * @brief threshold for confidence score to suppress weak detections
+     */
+    float nmsThresh;
+
+
+    /**
+     * @brief path to a trained model weights file
+     */
+    string modelWeightFile;
+
+    /**
+     * @brief openCV object of the Yolo CNN model
+     */
+    cv::dnn::Net network;
+
+    /**
+     * @brief vector of labels given by YoloV3
+     */
+    vector<int> labels;
+
+    /**
+     * @brief path of trained model configuration file
+     */
+    string modelConfigFile;
+
+    /**
+     * @brief vector of classes for which Yolo is trained
+     */
+    vector<string> classes;
+
+    /**
+     * @brief output vector of confidence scores of each label
+     */
+    vector<float> labelConfidences;
+
+    /**
+     * @brief vector containing bounding box information
+     */
+    vector<cv::Rect> boxCords;
 };
 

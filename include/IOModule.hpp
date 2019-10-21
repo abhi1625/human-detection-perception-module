@@ -55,12 +55,12 @@ using std::endl;
 using namespace boost::filesystem; //NOLINT
 
 class IOModule {
-public:
+ public:
     /**
      * @brief default constructor
      */
     IOModule();
-    
+
     /**
      * @brief readInput gets the input format from the user i.e., images - 1, 
      *        2 - video input, 3 - live camera feed  
@@ -143,7 +143,7 @@ public:
      * @param boxBottom - bottom-most coordinate of the bounding box
      * @return None 
      */ 
-    void drawBoundingBoxes(Mat &image, int boxLeft,
+    void drawBoundingBoxes(const Mat &image, int boxLeft,
                           int boxTop, int boxRight, int boxBottom);
 
     /**
@@ -175,10 +175,29 @@ public:
      */
     ~IOModule();
 
-private:
-    string inputDirectory;      // path to directory containing input images/vides
-    int inputType;              // id assigned to input type: images - 1, video - 2, camera-feed - 3
-    string outputDirectory;     // path to directory in which text file will be saved
-    int cameraID;               // device ID of the camera from which data is to be read
-    std::ofstream outFile;      // output stream object to save output text file.
+ private:
+    /**
+     * @brief path to directory containing input images/videos
+     */
+    string inputDirectory;
+
+    /**
+     * @brief id assigned to input type: images - 1, video - 2, camera-feed - 3
+     */
+    int inputType;
+
+    /**
+     * @brief path to directory in which text file will be saved
+     */
+    string outputDirectory;
+
+    /**
+     * @brief device ID of the camera from which data is to be read
+     */
+    int cameraID;
+
+    /**
+     * @brief output stream object to save output text file.
+     */
+    std::ofstream outFile;
 };

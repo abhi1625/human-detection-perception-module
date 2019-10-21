@@ -34,7 +34,6 @@
 #include "../include/PerceptionModule.hpp"
 
 PerceptionModule::PerceptionModule() {
-
 }
 
 int PerceptionModule::runDetection(bool testVideo, bool testImage) {
@@ -57,10 +56,11 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
     if (!testVideo && !testImage) {
         ioModule.readInputType(cin);
     }
-    
+
     if (ioModule.returnInputType() < 4) {
         if (ioModule.returnInputType() == 3) {
             std::istringstream inputDir("../data/");
+            ioModule.readInputDir(inputDir);
             ioModule.readOutputDir(cin);
         } else {
             ioModule.readInputDir(cin);
@@ -82,10 +82,10 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
 
         for (auto &imagePath : pathList) {
             Mat image = ioModule.readImage(imagePath, false);
-            
+
             Mat tempImage = imageProcessModule.gaussianBlur(image);
             tempImage = imageProcessModule.medianBlur(tempImage);
-            
+
             vector<Mat> finalLayerOut = inferModule.runForwardPass(tempImage);
             inferModule.applyNMS(tempImage, finalLayerOut);
             auto boxCords = inferModule.getBoxes();
@@ -96,8 +96,9 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
                     boxesList.push_back(bBox);
                     labelList.push_back("person");
                     imageList.push_back(imageCounter);
-                    ioModule.drawBoundingBoxes(image, bBox.x, bBox.y, 
-                                                bBox.x + bBox.width, bBox.y + bBox.height);
+                    ioModule.drawBoundingBoxes(image, bBox.x, bBox.y,
+                                                bBox.x + bBox.width,
+                                                bBox.y + bBox.height);
                 }
                 if (!testImage) {
                     cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
@@ -109,7 +110,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
             }
             imageCounter++;
         }
-        
+
         // Saving files
         frameTransModule.imageToCamera(boxesList);
         frameTransModule.cameraToBase();
@@ -131,12 +132,10 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
         int imageCounter = 0;
 
         for (auto &imagePath : pathList) {
-
             Mat image = ioModule.readImage(imagePath, false);
-            
             Mat tempImage = imageProcessModule.gaussianBlur(image);
             tempImage = imageProcessModule.medianBlur(tempImage);
-            
+
             vector<Mat> finalLayerOut = inferModule.runForwardPass(tempImage);
             inferModule.applyNMS(tempImage, finalLayerOut);
             auto boxCords = inferModule.getBoxes();
@@ -147,8 +146,9 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
                     boxesList.push_back(bBox);
                     labelList.push_back("person");
                     imageList.push_back(imageCounter);
-                    ioModule.drawBoundingBoxes(image, bBox.x, bBox.y, 
-                                                bBox.x + bBox.width, bBox.y + bBox.height);
+                    ioModule.drawBoundingBoxes(image, bBox.x, bBox.y,
+                                                bBox.x + bBox.width,
+                                                bBox.y + bBox.height);
                 }
                 if (!testImage) {
                     cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
@@ -160,7 +160,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
             }
             imageCounter++;
         }
-        
+
         // Saving files
         frameTransModule.imageToCamera(boxesList);
         frameTransModule.cameraToBase();
@@ -173,7 +173,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
     if (ioModule.returnInputType() == 2) {
         capture = cv::VideoCapture(ioModule.returnInputDir());
     }
-    
+
     if (ioModule.returnInputType() == 3) {
         capture = cv::VideoCapture(ioModule.returnCameraID());
     }
@@ -197,7 +197,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
         }
         Mat tempImage = imageProcessModule.gaussianBlur(frame);
         tempImage = imageProcessModule.medianBlur(tempImage);
-        
+
         vector<Mat> finalLayerOut = inferModule.runForwardPass(tempImage);
         inferModule.applyNMS(tempImage, finalLayerOut);
         auto boxCords = inferModule.getBoxes();
@@ -208,8 +208,9 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
                 boxesList.push_back(bBox);
                 labelList.push_back("person");
                 imageList.push_back(imageCounter);
-                ioModule.drawBoundingBoxes(tempImage, bBox.x, bBox.y, 
-                                            bBox.x + bBox.width, bBox.y + bBox.height);
+                ioModule.drawBoundingBoxes(tempImage, bBox.x, bBox.y,
+                                            bBox.x + bBox.width,
+                                            bBox.y + bBox.height);
             }
             if (!testVideo) {
                 cv::namedWindow("AcmeViz", CV_WINDOW_AUTOSIZE);
@@ -217,7 +218,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
                 char c = static_cast<char>(cv::waitKey(5));
                 if (c == 27) {
                     break;
-                }            
+                }
             }
         } else {
             cout << "No bounding boxes found!\n";
@@ -232,10 +233,7 @@ int PerceptionModule::runDetection(bool testVideo, bool testImage) {
     ioModule.saveTextFile(boxCoords, labelList, imageList);
     cout << "Thank you for using the module!\n";
     return 0;
-    
-
 }
 
 PerceptionModule::~PerceptionModule() {
-
 }

@@ -35,7 +35,9 @@
 #include "../include/ImageInference.hpp"
 
 ImageInference::ImageInference() {
-
+    confidenceThresh = 0.0;
+    nmsThresh = 0.0;
+    imageSize = 0;
 }
 
 void ImageInference::setModelParams() {
@@ -57,15 +59,14 @@ void ImageInference::setModelParams() {
     confidenceThresh = 0.9;
     nmsThresh = 0.85;  // Non-maximum suppression threshold
     imageSize = 416;  // Set image size w.r.t yolo network input
-
 }
 
 vector<Mat> ImageInference::runForwardPass(const Mat &inferImage) {
     // Run a forward inference on the yolo network
     Mat blob;
-    cv::dnn::blobFromImage(inferImage, blob, 1/255.0, 
-                           cv::Size(imageSize, imageSize), 
-                           cv::Scalar(0,0,0), true, false);
+    cv::dnn::blobFromImage(inferImage, blob, 1/255.0,
+                           cv::Size(imageSize, imageSize),
+                           cv::Scalar(0, 0, 0), true, false);
     network.setInput(blob);
 
     // Initialize an output layer of vectors
@@ -78,57 +79,54 @@ vector<Mat> ImageInference::runForwardPass(const Mat &inferImage) {
 
 vector<cv::String> ImageInference::feedOutputNames(const cv::dnn::Net& net) {
     static vector<cv::String> outputLayerStrings;
-    if (outputLayerStrings.empty())
-    {
-        //Get the indices of the output layers, i.e. the layers with unconnected outputs
+    if (outputLayerStrings.empty()) {
+        // Get the indices of the output layers,
+        // i.e. the layers with unconnected outputs
         vector<int> outLayers = net.getUnconnectedOutLayers();
-        
-        //get the names of all the layers in the network
+        // Get the names of all the layers in the network
         vector<cv::String> layersNames = net.getLayerNames();
-        
         // Get the names of the output layers in names
         outputLayerStrings.resize(outLayers.size());
-        for (size_t i = 0; i < outLayers.size(); ++i)
+        for (size_t i = 0; i < outLayers.size(); ++i) {
         outputLayerStrings[i] = layersNames[outLayers[i] - 1];
+        }
     }
     return outputLayerStrings;
 }
 
-void ImageInference::applyNMS(Mat& inferImage, const vector<Mat>& finalLayer) {
+void ImageInference::applyNMS(const Mat& inferImage, const vector<Mat>& finalLayer) {
     // Stich the final layer outputs for bounding box
-    // coordinates and gather the labels. Finally apply 
-    // Non-Maximal Supression(NMS) to suppress boxes with 
+    // coordinates and gather the labels. Finally apply
+    // Non-Maximal Supression(NMS) to suppress boxes with
     // low confidences.
-    for (size_t i = 0; i < finalLayer.size(); ++i) {  
-        float* data = (float*)finalLayer[i].data;
-        for (int j = 0;j < finalLayer[i].rows; ++j, data += finalLayer[i].cols)
-        {
+    for (size_t i = 0; i < finalLayer.size(); ++i) {
+        float* data = reinterpret_cast<float*>(finalLayer[i].data);
+        for (int j = 0; j < finalLayer[i].rows; ++j,
+            data += finalLayer[i].cols) {
             Mat scores = finalLayer[i].row(j).colRange(5, finalLayer[i].cols);
             cv::Point labelLocations;
             double confidences;
             // Get the value and location of the maximum score
             cv::minMaxLoc(scores, 0, &confidences, 0, &labelLocations);
-            if (confidences > confidenceThresh)
-            {
-                int centerX = (int)(data[0] * inferImage.cols);
-                int centerY = (int)(data[1] * inferImage.rows);
-                int width = (int)(data[2] * inferImage.cols);
-                int height = (int)(data[3] * inferImage.rows);
+            if (confidences > confidenceThresh) {
+                int centerX = static_cast<int>(data[0] * inferImage.cols);
+                int centerY = static_cast<int>(data[1] * inferImage.rows);
+                int width = static_cast<int>(data[2] * inferImage.cols);
+                int height = static_cast<int>(data[3] * inferImage.rows);
                 int left = centerX - width / 2;
                 int top = centerY - height / 2;
-                
                 if (labelLocations.x == 0) {
                     labels.push_back(labelLocations.x);
-                    labelConfidences.push_back((float)confidences);
+                    labelConfidences.push_back(static_cast<float>(confidences));
                     boxCords.push_back(cv::Rect(left, top, width, height));
                 }
             }
         }
     }
-    
+
     // perform non-maximal suppression
     vector<int> indices;
-    cv::dnn::NMSBoxes(boxCords, labelConfidences, 
+    cv::dnn::NMSBoxes(boxCords, labelConfidences,
                       confidenceThresh, nmsThresh, indices);
 }
 
@@ -148,5 +146,5 @@ vector<cv::Rect> ImageInference::getBoxes() {
 }
 
 ImageInference::~ImageInference() {
-
 }
+

@@ -37,17 +37,18 @@
 
 
 IOModule::IOModule() {
-
+    inputType = 0;
+    cameraID = 100;
 }
 
 void IOModule::readInputType(std::istream& input) {
     // 1. Get the type of the input feed
     // 2. set the input and output directories
     cout << "Welcome to the Acme Robotics Perception App!\n";
-    cout << "Enter type of input feed\n" 
-         << "Key 1 - Image\n" 
+    cout << "Enter type of input feed\n"
+         << "Key 1 - Image\n"
          << "Key 2 - Video(Provide full path)\n"
-         << "Key 3 - Live camera\n" 
+         << "Key 3 - Live camera\n"
          << "Key 4 - Run Images Demo\n" << std::flush;
 
     // Loop in until proper digit is entered
@@ -72,7 +73,6 @@ void IOModule::readOutputDir(std::istream& input) {
 }
 
 void IOModule::setCameraID(std::istream& input) {
-    
     cout << "Enter the camera ID of the camera you want to use:" << std::flush;
     input >> cameraID;
     input.clear();
@@ -126,12 +126,13 @@ int IOModule::returnInputType() {
     return _inputType;
 }
 
-void IOModule::saveTextFile(vector<vector<float>> boxCords, 
+void IOModule::saveTextFile(vector<vector<float>> boxCords,
                             vector<std::string> labels,
                             vector<int> imageList) {
     outFile.open(outputDirectory + "/finalOutput.txt");
     // Iterate over each of the box coordinates
-    outFile << "FrameID\t" << "ID\t" << "Label\t" << "x\t" << "y\t" << "z\t" << "w\t" << "h\n";  
+    outFile << "FrameID\t" << "ID\t" << "Label\t" << "x\t" <<
+                "y\t" << "z\t" << "w\t" << "h\n";
     int i = 0;
     for (auto& eachBox : boxCords) {
         outFile << imageList[i] << "\t" << i+1 << "\t" << labels[i] << "\t";
@@ -145,13 +146,11 @@ void IOModule::saveTextFile(vector<vector<float>> boxCords,
     outFile.close();
 }
 
-void IOModule::drawBoundingBoxes(Mat& image, int imageLeft,
+void IOModule::drawBoundingBoxes(const Mat& image, int imageLeft,
                                 int imageTop, int imageRight, int imageBottom) {
-    
-    cv::rectangle(image, cv::Point(imageLeft, imageTop), 
-                  cv::Point(imageRight, imageBottom), 
+    cv::rectangle(image, cv::Point(imageLeft, imageTop),
+                  cv::Point(imageRight, imageBottom),
                   cv::Scalar(0, 178, 0), 3);
-    
     }
 
 void IOModule::setDefaultInputs() {
@@ -165,5 +164,5 @@ void IOModule::setDefaultVidInput() {
 }
 
 IOModule::~IOModule() {
-
 }
+

@@ -33,10 +33,11 @@
  */
 #pragma once
 
+#include <vector>
 #include "IOModule.hpp"
 
 class FrameTransform {
-public:
+ public:
     /**
      * @brief default constructor
      */
@@ -87,15 +88,15 @@ public:
      */
     ~FrameTransform();
 
-private:
+ private:
     /**
      * @brief Matrix containing coordinates in robot's base frame
      */
     cv::Mat coords3D;
-    
+
     /**
      * @brief Matrix containing coordinates in camera frame
      */
-    cv::Mat coordsCam = cv::Mat::ones(1,3, CV_64F);
+    cv::Mat coordsCam = cv::Mat::ones(1, 3, CV_64F);
 };
 

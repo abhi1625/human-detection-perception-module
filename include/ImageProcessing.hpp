@@ -35,7 +35,7 @@
 #include "IOModule.hpp"
 
 class ImageProcessing {
-public:
+ public:
     /**
      * @brief default constructor
      */

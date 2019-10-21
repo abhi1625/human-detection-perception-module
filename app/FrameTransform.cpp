@@ -31,7 +31,6 @@
  * @author     : Abhinav Modi
  * @created on : Oct 21, 2019
  */
-// Copyright 2019 Kartik Madhira, Abhinav Modi
 
 #include "../include/FrameTransform.hpp"
 
@@ -46,7 +45,7 @@ void FrameTransform::imageToCamera(const vector<cv::Rect> &Boxes) {
     for (auto &box : Boxes) {
         // coordsCam.push_back(cv::Point3f(box.x, box.y, 1));
         vector<int> v{box.x, box.y, 1};
-        cv::Mat _row(1, v.size(), CV_64F, v.data()); 
+        cv::Mat _row(1, v.size(), CV_64F, v.data());
         cv::vconcat(coordsCam, _row, coordsCam);
     }
     coordsCam = coordsCam.t();
@@ -77,8 +76,9 @@ cv::Mat FrameTransform::getCoordsCam() {
     return _coordsCam;
 }
 
-vector<vector<float>> FrameTransform::outputCoords(const vector<cv::Rect> &Boxes) {
-    // store the output of coordinates in x, y, z, w, h
+vector<vector<float>> FrameTransform::
+                      outputCoords(const vector<cv::Rect> &Boxes) {
+    // Store the output of coordinates in x, y, z, w, h
     vector<vector<float>> _outputCoords;
     for (auto &eachBox : Boxes) {
         float x = eachBox.x;
@@ -86,7 +86,7 @@ vector<vector<float>> FrameTransform::outputCoords(const vector<cv::Rect> &Boxes
         float z = 1.0;
         float w = eachBox.width;
         float h = eachBox.height;
-        vector<float> v = {x,y,z,w,h};
+        vector<float> v = {x, y, z, w, h};
         _outputCoords.push_back(v);
     }
     return _outputCoords;

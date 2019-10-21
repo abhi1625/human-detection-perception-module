@@ -34,7 +34,6 @@
 #include "../include/ImageProcessing.hpp"
 
 ImageProcessing::ImageProcessing() {
-
 }
 
 Mat ImageProcessing::resizeImage(int h, int w, const Mat &image) {
@@ -51,10 +50,10 @@ Mat ImageProcessing::medianBlur(const Mat &image) {
 
 Mat ImageProcessing::gaussianBlur(const Mat &image) {
     Mat _blurredImage;
-    cv::GaussianBlur(image, _blurredImage, cv::Size(3, 3), 0, 0, cv::BORDER_DEFAULT);
+    cv::GaussianBlur(image, _blurredImage,
+                     cv::Size(3, 3), 0, 0, cv::BORDER_DEFAULT);
     return _blurredImage;
 }
 
 ImageProcessing::~ImageProcessing() {
-
 }

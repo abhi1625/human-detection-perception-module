@@ -32,13 +32,13 @@
  */
 #pragma once
 
+#include <vector>
 #include "IOModule.hpp"
 #include "ImageProcessing.hpp"
 #include "ImageInference.hpp"
 #include "FrameTransform.hpp"
 class PerceptionModule {
-
-public:
+ public:
     /**
      * @brief default constructor
      */
@@ -60,8 +60,7 @@ public:
      */
     ~PerceptionModule();
 
-private:
-
+ private:
     /**
      * @brief data structure to store image frames from video buffer.
      */
